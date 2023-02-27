@@ -12,6 +12,9 @@ export default function Home() {
   const githubCVUrl = "https://github.com/ghpaterson/CV"
   const gitHubUrl = "https://github.com/ghpaterson"
   const linkedInUrl = "https://www.linkedin.com/in/graeme-paterson-25b096268/"
+  const ecolidayUrl = "https://github.com/ghpaterson/Ecoliday"
+  const mineshaftUrl = "https://github.com/ghpaterson/acebook-mineshaft"
+  const weatherUrl = "https://github.com/ghpaterson/weather-app"
   
   return (
     <>
@@ -67,29 +70,35 @@ export default function Home() {
 
           <div className="flex justify-center my-10">
             <div>
-            <h3 className="text-xl pb-2 text-gray-600 dark:text-gray-100"> Ecoliday </h3>
-             <p className="text-l pb-2 text-gray-600 dark:text-gray-100">
-              Carbon Emissions estimate based on modes of transportation
-            </p>
-             <Image src={Ecoliday} width={800} className="rounded-lg" />
+              <a href={ecolidayUrl} target="_blank" rel="noreferrer">
+              <h3 className="text-xl hover:text-yellow-500 pb-2 text-gray-600 dark:text-gray-100 dark:hover:text-yellow-500"> Ecoliday </h3>
+              </a>
+              <p className="text-l pb-2 text-gray-600 dark:text-gray-100">
+                Carbon Emissions estimate based on modes of transportation
+              </p>
+              <Image src={Ecoliday} width={800} className="rounded-lg" />
              </div>
           </div>
           <div className="flex justify-center my-10">
             <div>
-            <h3 className="text-xl pb-2 text-gray-600 dark:text-gray-100"> Mineshaft </h3>
-             <p className="text-l pb-2 text-gray-600 dark:text-gray-100">
-              Facebook clone using the MERN stack
-            </p>
-             <Image src={mineshaft} width={800} className="rounded-lg" />
+              <a href={mineshaftUrl} target="_blank" rel="noreferrer">
+              <h3 className="text-xl pb-2 hover:text-yellow-500 text-gray-600 dark:text-gray-100 dark:hover:text-yellow-500"> Mineshaft </h3>
+              </a>
+              <p className="text-l pb-2 text-gray-600 dark:text-gray-100">
+                Facebook clone using the MERN stack
+              </p>
+              <Image src={mineshaft} width={800} className="rounded-lg" />
              </div>
           </div>
           <div className="flex justify-center my-10">
             <div>
-            <h3 className="text-xl pb-2 text-gray-600 dark:text-gray-100"> Weather App </h3>
-             <p className="text-l pb-2 text-gray-600 dark:text-gray-100">
-              Weather based on your current location using the Open-Meteo API
-            </p>
-             <Image src={weather} width={800} className="rounded-lg" />
+              <a href={weatherUrl} target="_blank" rel="noreferrer">
+              <h3 className="text-xl pb-2 hover:text-yellow-500 text-gray-600 dark:text-gray-100 dark:hover:text-yellow-500"> Weather App </h3>
+              </a>
+              <p className="text-l pb-2 text-gray-600 dark:text-gray-100">
+                Weather based on your current location using the Open-Meteo API
+              </p>
+              <Image src={weather} width={800} className="rounded-lg" />
              </div>
           </div>
         </section>
