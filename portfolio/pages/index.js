@@ -19,10 +19,10 @@ export default function Home() {
       <main className="bg-gray-50 px-10 md:px-20 lg:px-30 dark:bg-gray-800">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl ml-5">Developed by Graeme</h1>
+            <h1 className="text-xl ml-5 dark:text-gray-100">Developed by Graeme</h1>
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl"/>
+                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl text-gray-700 dark:text-yellow-500"/>
               </li>
               <li>
                 <a className="bg-yellow-500 text-white px-4 py-2 border-none rounded-md ml-8 mr-5" href="https://github.com/ghpaterson" target="_blank">Github</a>
@@ -31,12 +31,12 @@ export default function Home() {
           </nav>
           <div className="text-center p-10">
             <h2 className="text-5xl py-2 text-yellow-500 font-medium md:text-6xl">Graeme Paterson</h2>
-            <h3 className="text-2xl py-2 text-gray-700 md:text-3xl">Software Developer</h3>
-            <p className="text-md py-5 leading-8 text-gray-700 md:text-xl max-w-lg mx-auto">
+            <h3 className="text-2xl py-2 text-gray-700 md:text-3xl dark:text-gray-100">Software Developer</h3>
+            <p className="text-md py-5 leading-8 text-gray-700 md:text-xl max-w-lg mx-auto dark:text-gray-100">
               Junior Software developer focusing on Frontend. Interested UI/UX
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 cursor-pointer">
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 cursor-pointer dark:text-gray-100">
             <AiFillLinkedin />
             <AiFillGithub href="https://github.com/ghpaterson"/>
           </div>
@@ -45,11 +45,11 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className="text-3xl py-1">Projects</h3>
-            <p className="text-md py-2 leading-8 text-gray-600">
+            <h3 className="text-3xl py-1 text-gray-700 dark:text-gray-100">Projects</h3>
+            <p className="text-md py-2 leading-8 text-gray-600 dark:text-gray-100">
               Here are screen shots of some of the projects I am proud of...
             </p>
-            <p className="text-md py-2 leading-8 text-gray-600">
+            <p className="text-md py-2 leading-8 text-gray-600 dark:text-gray-100">
               Here is some more text that I ma going to waffle on about myself if I need to 
               because I have to get used to talking about myself.
             </p>
@@ -57,8 +57,8 @@ export default function Home() {
 
           <div className="flex justify-center my-10">
             <div>
-            <h3 className="text-xl pb-2 text-gray-600"> Ecoliday </h3>
-             <p className="text-l pb-2 text-gray-600">
+            <h3 className="text-xl pb-2 text-gray-600 dark:text-gray-100"> Ecoliday </h3>
+             <p className="text-l pb-2 text-gray-600 dark:text-gray-100">
               Carbon Emissions estimate based on modes of transportation
             </p>
              <Image src={Ecoliday} width={800} className="rounded-lg" />
@@ -66,8 +66,8 @@ export default function Home() {
           </div>
           <div className="flex justify-center my-10">
             <div>
-            <h3 className="text-xl pb-2 text-gray-600"> Ecoliday </h3>
-             <p className="text-l pb-2 text-gray-600">
+            <h3 className="text-xl pb-2 text-gray-600 dark:text-gray-100"> Ecoliday </h3>
+             <p className="text-l pb-2 text-gray-600 dark:text-gray-100">
               Carbon Emissions estimate based on modes of transportation
             </p>
              <Image src={Ecoliday} width={800} className="rounded-lg" />
@@ -75,8 +75,8 @@ export default function Home() {
           </div>
           <div className="flex justify-center my-10">
             <div>
-            <h3 className="text-xl pb-2 text-gray-600"> Ecoliday </h3>
-             <p className="text-l pb-2 text-gray-600">
+            <h3 className="text-xl pb-2 text-gray-600 dark:text-gray-100"> Ecoliday </h3>
+             <p className="text-l pb-2 text-gray-600 dark:text-gray-100">
               Carbon Emissions estimate based on modes of transportation
             </p>
              <Image src={Ecoliday} width={800} className="rounded-lg" />
