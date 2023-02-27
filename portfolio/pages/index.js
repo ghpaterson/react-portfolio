@@ -22,7 +22,7 @@ export default function Home() {
                 <BsFillMoonStarsFill className="cursor-pointer text-2xl"/>
               </li>
               <li>
-                <a className="bg-yellow-500 text-white px-4 py-2 border-none rounded-md ml-8 mr-5" href="#">Github</a>
+                <a className="bg-yellow-500 text-white px-4 py-2 border-none rounded-md ml-8 mr-5" href="https://github.com/ghpaterson" target="_blank">Github</a>
               </li>
             </ul>
           </nav>
@@ -33,9 +33,9 @@ export default function Home() {
               Junior Software developer focusing on Frontend. Interested UI/UX
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 cursor-pointer">
             <AiFillLinkedin />
-            <AiFillGithub />
+            <AiFillGithub href="https://github.com/ghpaterson"/>
           </div>
           {/* <div>Image will go here</div>  */}
         </section>
@@ -52,14 +52,32 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="flex justify-center">
+          <div className="flex justify-center my-10">
             <div>
-            <h3> Ecoliday </h3>
-             <p>
+            <h3 className="text-xl pb-2 text-gray-600"> Ecoliday </h3>
+             <p className="text-l pb-2 text-gray-600">
               Carbon Emissions estimate based on modes of transportation
             </p>
              <Image src={Emissions} width={800}  />
-            </div>
+             </div>
+          </div>
+          <div className="flex justify-center my-10">
+            <div>
+            <h3 className="text-xl pb-2 text-gray-600"> Ecoliday </h3>
+             <p className="text-l pb-2 text-gray-600">
+              Carbon Emissions estimate based on modes of transportation
+            </p>
+             <Image src={Emissions} width={800}  />
+             </div>
+          </div>
+          <div className="flex justify-center my-10">
+            <div>
+            <h3 className="text-xl pb-2 text-gray-600"> Ecoliday </h3>
+             <p className="text-l pb-2 text-gray-600">
+              Carbon Emissions estimate based on modes of transportation
+            </p>
+             <Image src={Emissions} width={800}  />
+             </div>
           </div>
         </section>
       </main>
