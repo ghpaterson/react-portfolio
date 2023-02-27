@@ -1,6 +1,8 @@
 import Head from "next/head";
 import {BsFillMoonStarsFill} from 'react-icons/bs'
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
+import Image from 'next/image'
+import Emissions from '../public/Emissions.png'
 
 export default function Home() {
   return (
@@ -50,7 +52,15 @@ export default function Home() {
             </p>
           </div>
 
-          
+          <div className="flex justify-center">
+            <div>
+            <h3> Ecoliday </h3>
+             <p>
+              Carbon Emissions estimate based on modes of transportation
+            </p>
+             <Image src={Emissions} width={800}  />
+            </div>
+          </div>
         </section>
       </main>
     </>
