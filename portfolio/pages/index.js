@@ -1,6 +1,6 @@
 import Head from "next/head";
 import {BsFillMoonStarsFill} from 'react-icons/bs'
-
+import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-white px-10">
+      <main className="bg-gray-50">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl">Developed by Graeme</h1>
@@ -24,6 +24,18 @@ export default function Home() {
               </li>
             </ul>
           </nav>
+          <div className="text-center p-10">
+            <h2 className="text-5xl py-2 text-yellow-500 font-medium">Graeme Paterson</h2>
+            <h3 className="text-2xl py-2">Software Developer</h3>
+            <p className="text-md py-5 leading-8 text-gray-800">
+              Junior Software developer focusing on Frontend 
+            </p>
+          </div>
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
+            <AiFillLinkedin />
+            <AiFillGithub />
+          </div>
+          <div></div>
         </section>
       </main>
     </>
