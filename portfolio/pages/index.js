@@ -3,6 +3,8 @@ import {BsFillMoonFill} from 'react-icons/bs'
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
 import Image from 'next/image'
 import Ecoliday from '../public/Ecoliday.png'
+import mineshaft from '../public/mineshaft.png'
+import weather from '../public/weather.png'
 import {useState} from 'react'
 
 export default function Home() {
@@ -74,20 +76,20 @@ export default function Home() {
           </div>
           <div className="flex justify-center my-10">
             <div>
-            <h3 className="text-xl pb-2 text-gray-600 dark:text-gray-100"> Ecoliday </h3>
+            <h3 className="text-xl pb-2 text-gray-600 dark:text-gray-100"> Mineshaft </h3>
              <p className="text-l pb-2 text-gray-600 dark:text-gray-100">
-              Carbon Emissions estimate based on modes of transportation
+              Facebook clone using the MERN stack
             </p>
-             <Image src={Ecoliday} width={800} className="rounded-lg" />
+             <Image src={mineshaft} width={800} className="rounded-lg" />
              </div>
           </div>
           <div className="flex justify-center my-10">
             <div>
-            <h3 className="text-xl pb-2 text-gray-600 dark:text-gray-100"> Ecoliday </h3>
+            <h3 className="text-xl pb-2 text-gray-600 dark:text-gray-100"> Weather App </h3>
              <p className="text-l pb-2 text-gray-600 dark:text-gray-100">
-              Carbon Emissions estimate based on modes of transportation
+              Weather based on your current location using the Open-Meteo API
             </p>
-             <Image src={Ecoliday} width={800} className="rounded-lg" />
+             <Image src={weather} width={800} className="rounded-lg" />
              </div>
           </div>
         </section>
