@@ -1,5 +1,5 @@
 import Head from "next/head";
-import {BsFillMoonStarsFill} from 'react-icons/bs'
+import {BsFillMoonFill} from 'react-icons/bs'
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
 import Image from 'next/image'
 import Ecoliday from '../public/Ecoliday.png'
@@ -7,6 +7,10 @@ import {useState} from 'react'
 
 export default function Home() {
   const[darkMode, setDarkMode] = useState(false);
+  const githubCVUrl = "https://github.com/ghpaterson/CV"
+  const gitHubUrl = "https://github.com/ghpaterson"
+  const linkedInUrl = "https://www.linkedin.com/in/graeme-paterson-25b096268/"
+  
   return (
     <>
     <div className={darkMode ? "dark" : ""}>
@@ -22,10 +26,10 @@ export default function Home() {
             <h1 className="text-xl ml-5 dark:text-gray-100">Developed by Graeme</h1>
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl text-gray-700 dark:text-yellow-500"/>
+                <BsFillMoonFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl hover:animate-pulse text-gray-700 dark:text-yellow-500"/>
               </li>
               <li>
-                <a className="bg-yellow-500 text-white px-4 py-2 border-none rounded-md ml-8 mr-5" href="https://github.com/ghpaterson" target="_blank">Github</a>
+                <a className="bg-yellow-500 text-gray-100 px-4 py-2 border-none rounded-md ml-8 mr-5" href={githubCVUrl} target="_blank">Github CV</a>
               </li>
             </ul>
           </nav>
@@ -37,19 +41,23 @@ export default function Home() {
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 cursor-pointer dark:text-gray-100">
+            <a href={linkedInUrl} target="_blank" rel="noreferrer">
             <AiFillLinkedin />
-            <AiFillGithub href="https://github.com/ghpaterson"/>
+            </a>
+            <a href={gitHubUrl} target="_blank" rel="noreferrer">
+            <AiFillGithub />
+            </a>
           </div>
           {/* <div>Image will go here</div>  */}
         </section>
 
         <section>
-          <div>
+          <div className="pl-60">
             <h3 className="text-3xl py-1 text-gray-700 dark:text-gray-100">Projects</h3>
             <p className="text-md py-2 leading-8 text-gray-600 dark:text-gray-100">
               Here are screen shots of some of the projects I am proud of...
             </p>
-            <p className="text-md py-2 leading-8 text-gray-600 dark:text-gray-100">
+            <p className="text-md py-2 leading-8 text-gray-600 md:text-xl max-w-lg dark:text-gray-100">
               Here is some more text that I ma going to waffle on about myself if I need to 
               because I have to get used to talking about myself.
             </p>
