@@ -59,7 +59,7 @@ export default function Home() {
           <div className="relative mx-auto bg-gradient-to-b from-yellow-500 rounded-full w-96 h-96 mt-8 mb-6 overflow-hidden">
             <Image src={avatar} objectFit="cover" />
           </div> 
-          <div className="text-3xl flex justify-center gap-8 py-3 text-gray-600  dark:text-gray-100">
+          <div className="text-3xl flex justify-center gap-8 py-4 text-gray-600  dark:text-gray-100">
             <SiJavascript />
             <DiRuby />
             <SiMongodb />
@@ -73,7 +73,7 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="flex justify-center pt-6">
+          <div className="flex justify-center pt-6 mt-10">
             <h3 className="text-5xl py-1 text-gray-700 dark:text-gray-100 dark:text-yellow-500">Projects</h3>
             {/* <p className="text-md py-2 leading-8 text-gray-600 dark:text-gray-100">
               Here are screen shots of some of the projects I am proud of...
@@ -84,7 +84,7 @@ export default function Home() {
             </p> */}
           </div>
 
-          <div className="flex justify-center my-10">
+          <div className="flex justify-center my-6">
             <div>
               <a href={ecolidayUrl} target="_blank" rel="noreferrer">
               <h3 className="text-2xl hover:text-yellow-500 pb-2 text-gray-600 dark:text-gray-100 dark:hover:text-yellow-500"> Ecoliday </h3>
