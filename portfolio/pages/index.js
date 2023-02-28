@@ -1,6 +1,8 @@
 import Head from "next/head";
 import {BsFillMoonFill} from 'react-icons/bs'
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
+import {SiCss3, SiExpress, SiJavascript, SiMongodb, SiNodedotjs, SiReact, SiTailwindcss} from 'react-icons/si'
+import {DiRuby} from 'react-icons/di'
 import Image from 'next/image'
 import avatar from '../public/avatar.png'
 import Ecoliday from '../public/Ecoliday.png'
@@ -43,7 +45,7 @@ export default function Home() {
             <h2 className="font-raleway text-5xl py-2 text-yellow-500 font-medium md:text-6xl">Graeme Paterson</h2>
             <h3 className="text-2xl py-2 text-gray-700 md:text-3xl dark:text-gray-100">Software Developer</h3>
             <p className="text-md py-5 leading-8 text-gray-700 md:text-xl max-w-lg mx-auto dark:text-gray-100">
-              Junior Software developer focusing on Frontend. Interested UI/UX
+              Junior Software full-stack developer with a focus on Frontend. Makers Academy graduate
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 cursor-pointer dark:text-gray-100">
@@ -54,9 +56,20 @@ export default function Home() {
             <AiFillGithub />
             </a>
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-yellow-500 rounded-full w-96 h-96 mt-8 overflow-hidden">
+          <div className="relative mx-auto bg-gradient-to-b from-yellow-500 rounded-full w-96 h-96 mt-8 mb-6 overflow-hidden">
             <Image src={avatar} objectFit="cover" />
           </div> 
+          <div className="text-3xl flex justify-center gap-8 py-3 text-gray-600  dark:text-gray-100">
+            <SiJavascript />
+            <DiRuby />
+            <SiMongodb />
+            <SiExpress />
+            <SiReact />
+            <SiNodedotjs />
+            <SiTailwindcss />
+            <SiCss3 />
+            
+          </div>
         </section>
 
         <section>
