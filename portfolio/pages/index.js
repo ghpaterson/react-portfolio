@@ -2,6 +2,7 @@ import Head from "next/head";
 import {BsFillMoonFill} from 'react-icons/bs'
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
 import Image from 'next/image'
+import avatar from '../public/avatar.png'
 import Ecoliday from '../public/Ecoliday.png'
 import mineshaft from '../public/mineshaft.png'
 import weather from '../public/weather.png'
@@ -25,10 +26,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-gray-50 px-10 md:px-20 lg:px-30 dark:bg-gray-800">
+      <main className="bg-gray-100 px-10 md:px-20 lg:px-30 dark:bg-gray-800">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl ml-5 dark:text-gray-100">Developed by Graeme</h1>
+          <nav className="py-10 mb-8 flex justify-between">
+            <h1 className="text-xl ml-5 dark:text-gray-100">Developed by Graeme. P</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl hover:animate-pulse text-gray-700 dark:text-yellow-500"/>
@@ -38,7 +39,7 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10">
+          <div className="text-center p-3">
             <h2 className="font-raleway text-5xl py-2 text-yellow-500 font-medium md:text-6xl">Graeme Paterson</h2>
             <h3 className="text-2xl py-2 text-gray-700 md:text-3xl dark:text-gray-100">Software Developer</h3>
             <p className="text-md py-5 leading-8 text-gray-700 md:text-xl max-w-lg mx-auto dark:text-gray-100">
@@ -53,28 +54,30 @@ export default function Home() {
             <AiFillGithub />
             </a>
           </div>
-          {/* <div>Image will go here</div>  */}
+          <div className="relative mx-auto bg-gradient-to-b from-yellow-500 rounded-full w-96 h-96 mt-8 overflow-hidden">
+            <Image src={avatar} objectFit="cover" />
+          </div> 
         </section>
 
         <section>
-          <div className="pl-60">
-            <h3 className="text-3xl py-1 text-gray-700 dark:text-gray-100">Projects</h3>
-            <p className="text-md py-2 leading-8 text-gray-600 dark:text-gray-100">
+          <div className="flex justify-center pt-6">
+            <h3 className="text-5xl py-1 text-gray-700 dark:text-gray-100 dark:text-yellow-500">Projects</h3>
+            {/* <p className="text-md py-2 leading-8 text-gray-600 dark:text-gray-100">
               Here are screen shots of some of the projects I am proud of...
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-600 md:text-xl max-w-lg dark:text-gray-100">
+            </p> */}
+            {/* <p className="text-md py-2 leading-8 text-gray-600 md:text-xl max-w-lg dark:text-gray-100">
               Here is some more text that I ma going to waffle on about myself if I need to 
               because I have to get used to talking about myself.
-            </p>
+            </p> */}
           </div>
 
           <div className="flex justify-center my-10">
             <div>
               <a href={ecolidayUrl} target="_blank" rel="noreferrer">
-              <h3 className="text-xl hover:text-yellow-500 pb-2 text-gray-600 dark:text-gray-100 dark:hover:text-yellow-500"> Ecoliday </h3>
+              <h3 className="text-2xl hover:text-yellow-500 pb-2 text-gray-600 dark:text-gray-100 dark:hover:text-yellow-500"> Ecoliday </h3>
               </a>
               <p className="text-l pb-2 text-gray-600 dark:text-gray-100">
-                Carbon Emissions estimate based on modes of transportation
+                Users can estimate their carbon emissions based of travel based on different modes of transport.
               </p>
               <Image src={Ecoliday} width={800} className="rounded-lg" />
              </div>
@@ -90,7 +93,7 @@ export default function Home() {
               <Image src={mineshaft} width={800} className="rounded-lg" />
              </div>
           </div>
-          <div className="flex justify-center my-10">
+          <div className="flex justify-center my-10 mb-6">
             <div>
               <a href={weatherUrl} target="_blank" rel="noreferrer">
               <h3 className="text-xl pb-2 hover:text-yellow-500 text-gray-600 dark:text-gray-100 dark:hover:text-yellow-500"> Weather App </h3>
