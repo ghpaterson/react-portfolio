@@ -23,7 +23,13 @@ Open [http://localhost:3000](http://localhost:3000) to see my portfolio in your 
 
 ## Screen
 
-![Home](./public/portfolio-screen.png)
+Light Mode
+
+![Light](./public/portfolio-screen2.png)
+
+Dark Mode
+
+![Dark](./public/portfolio-screen.png)
 
 ## Deploy on Vercel
 
