@@ -41,11 +41,11 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-3">
+          <div className="text-center p-2">
             <h2 className="font-raleway text-5xl py-2 text-yellow-500 font-medium md:text-6xl">Graeme Paterson</h2>
             <h3 className="text-2xl py-2 text-gray-700 md:text-3xl dark:text-gray-100">Software Developer</h3>
             <p className="text-md py-5 leading-8 text-gray-700 md:text-xl max-w-lg mx-auto dark:text-gray-100">
-              Junior Software full-stack developer with a focus on Frontend. Makers Academy graduate
+              Junior Full-Stack software developer with a focus on Frontend. Makers Academy graduate
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 cursor-pointer dark:text-gray-100">
@@ -56,7 +56,7 @@ export default function Home() {
             <AiFillGithub />
             </a>
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-yellow-500 rounded-full w-96 h-96 mt-8 mb-6 overflow-hidden">
+          <div className="relative mx-auto bg-gradient-to-b from-yellow-500 rounded-full w-96 h-96 mt-6 mb-6 overflow-hidden">
             <Image src={avatar} objectFit="cover" />
           </div> 
           <div className="text-3xl flex justify-center gap-8 py-4 text-gray-600  dark:text-gray-100">
