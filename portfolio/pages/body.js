@@ -13,7 +13,6 @@ import {
 import { DiRuby } from "react-icons/di";
 import Image from "next/image";
 import avatar from "../public/avatar.png";
-import { useState } from "react";
 
 export default function Body({ darkMode, setDarkMode }) {
   const gitHubUrl = "https://github.com/ghpaterson";
