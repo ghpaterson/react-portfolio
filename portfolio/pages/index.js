@@ -81,10 +81,10 @@ export default function Home() {
                 <AiFillGithub />
               </a>
             </div>
-            <div className="relative mx-auto bg-gradient-to-b from-yellow-500 rounded-full w-96 h-96 mt-6 mb-6 overflow-hidden sm:w-64 sm:h-64">
+            <div className="relative mx-auto bg-gradient-to-b from-yellow-500 rounded-full w-80 h-80 mt-6 mb-6 overflow-hidden sm:w-60 sm:h-60">
               <Image src={avatar} objectFit="cover" />
             </div>
-            <div className="text-3xl flex justify-center gap-8 py-4 text-gray-600  dark:text-gray-100">
+            <div className="text-3xl flex justify-center gap-8 py-4 text-gray-600  dark:text-gray-100 md:flex md:justify-center">
               <SiJavascript />
               <DiRuby />
               <SiMongodb />
