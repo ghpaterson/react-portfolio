@@ -16,6 +16,7 @@ import avatar from "../public/avatar.png";
 import Ecoliday from "../public/Ecoliday.png";
 import mineshaft from "../public/mineshaft.png";
 import weather from "../public/weather.png";
+import homepage from "../public/homepage.png";
 import { useState } from "react";
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
   const ecolidayUrl = "https://github.com/ghpaterson/Ecoliday";
   const mineshaftUrl = "https://github.com/ghpaterson/acebook-mineshaft";
   const weatherUrl = "https://github.com/ghpaterson/weather-app";
+  const recipeaseURL = "https://github.com/ghpaterson/recipease";
 
   return (
     <>
@@ -38,7 +40,7 @@ export default function Home() {
         </Head>
         <main className="bg-gray-100 px-10 md:px-20 lg:px-30 dark:bg-gray-800">
           <section className="min-h-screen">
-            <nav className="py-10 mb-8 flex justify-between">
+            <nav className="py-10 mb-4 flex justify-between">
               <h1 className="text-xl ml-5 dark:text-gray-100"></h1>
               <ul className="flex items-center">
                 <li>
@@ -58,7 +60,7 @@ export default function Home() {
                 </li>
               </ul>
             </nav>
-            <div className="text-center p-2">
+            <div className="text-center p-1">
               <h2 className="font-raleway text-5xl py-2 text-yellow-500 font-medium md:text-6xl">
                 Hi, I'm Graeme.
               </h2>
@@ -98,13 +100,6 @@ export default function Home() {
               <h3 className="text-5xl py-1 text-gray-700 dark:text-gray-100 dark:text-yellow-500">
                 Projects
               </h3>
-              {/* <p className="text-md py-2 leading-8 text-gray-600 dark:text-gray-100">
-              Here are screen shots of some of the projects I am proud of...
-            </p> */}
-              {/* <p className="text-md py-2 leading-8 text-gray-600 md:text-xl max-w-lg dark:text-gray-100">
-              Here is some more text that I ma going to waffle on about myself if I need to 
-              because I have to get used to talking about myself.
-            </p> */}
             </div>
 
             <div className="flex justify-center my-6">
@@ -120,6 +115,21 @@ export default function Home() {
                   based on different modes of transport.
                 </p>
                 <Image src={Ecoliday} width={800} className="rounded-lg" />
+              </div>
+            </div>
+            <div className="flex justify-center my-10 mb-6">
+              <div>
+                <a href={recipeaseURL} target="_blank" rel="noreferrer">
+                  <h3 className="text-xl pb-2 hover:text-yellow-500 text-gray-600 dark:text-gray-100 dark:hover:text-yellow-500">
+                    {" "}
+                    Recipeas{" "}
+                  </h3>
+                </a>
+                <p className="text-l pb-2 text-gray-600 dark:text-gray-100">
+                  Food recipe library allowing users to browse by category or
+                  search for ingredients using the Spoonacular API
+                </p>
+                <Image src={homepage} width={800} className="rounded-lg" />
               </div>
             </div>
             <div className="flex justify-center my-10">
