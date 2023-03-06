@@ -7,6 +7,7 @@ import {
   SiJavascript,
   SiMongodb,
   SiNodedotjs,
+  SiNextdotjs,
   SiReact,
   SiTailwindcss,
 } from "react-icons/si";
@@ -40,7 +41,7 @@ export default function Home() {
         </Head>
         <main className="bg-gray-100 px-10 md:px-20 lg:px-30 dark:bg-gray-800">
           <section className="min-h-screen">
-            <nav className="py-10 mb-4 flex justify-between">
+            <nav className="py-10 mb-2 flex justify-between">
               <h1 className="text-xl ml-5 dark:text-gray-100"></h1>
               <ul className="flex items-center">
                 <li>
@@ -61,7 +62,7 @@ export default function Home() {
               </ul>
             </nav>
             <div className="text-center p-1">
-              <h2 className="font-raleway text-5xl py-2 text-yellow-500 font-medium md:text-6xl">
+              <h2 className="font-raleway text-5xl py-2 text-yellow-500 font-medium md:text-5xl sm:text-4xl">
                 Hi, I'm Graeme.
               </h2>
               <h3 className="text-2xl py-2 text-gray-700 md:text-3xl dark:text-gray-100">
@@ -72,7 +73,7 @@ export default function Home() {
                 Makers Academy graduate
               </p>
             </div>
-            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 cursor-pointer dark:text-gray-100">
+            <div className="text-3xl flex justify-center gap-16 py-2 text-gray-600 cursor-pointer dark:text-gray-100">
               <a href={linkedInUrl} target="_blank" rel="noreferrer">
                 <AiFillLinkedin />
               </a>
@@ -80,7 +81,7 @@ export default function Home() {
                 <AiFillGithub />
               </a>
             </div>
-            <div className="relative mx-auto bg-gradient-to-b from-yellow-500 rounded-full w-96 h-96 mt-6 mb-6 overflow-hidden">
+            <div className="relative mx-auto bg-gradient-to-b from-yellow-500 rounded-full w-96 h-96 mt-6 mb-6 overflow-hidden sm:w-64 sm:h-64">
               <Image src={avatar} objectFit="cover" />
             </div>
             <div className="text-3xl flex justify-center gap-8 py-4 text-gray-600  dark:text-gray-100">
@@ -89,6 +90,7 @@ export default function Home() {
               <SiMongodb />
               <SiExpress />
               <SiReact />
+              <SiNextdotjs />
               <SiNodedotjs />
               <SiTailwindcss />
               <SiCss3 />
