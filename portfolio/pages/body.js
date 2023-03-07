@@ -50,8 +50,8 @@ export default function Body({ darkMode, setDarkMode }) {
               Software Developer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-700 md:text-xl max-w-lg mx-auto dark:text-gray-100">
-              Junior Full-Stack software developer with a focus on Frontend.
-              Makers Academy graduate
+              Junior Full-Stack software developer with a focus on Frontend
+              development. Makers Academy graduate
             </p>
           </div>
           <div className="text-3xl flex justify-center gap-16 py-2 text-gray-600 cursor-pointer dark:text-gray-100">
