@@ -34,10 +34,10 @@ export default function Body({ darkMode, setDarkMode }) {
               <li>
                 <a
                   className="bg-yellow-500 text-gray-100 px-4 py-2 border-none rounded-md ml-8 mr-5"
-                  href={githubCVUrl}
+                  href="/graeme-paterson-cv.pdf"
                   target="_blank"
                 >
-                  Github CV
+                  Resume
                 </a>
               </li>
             </ul>
