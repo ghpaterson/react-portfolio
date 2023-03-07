@@ -17,7 +17,7 @@ export default function Home() {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <main className="bg-gray-100 px-10 md:px-20 lg:px-30 dark:bg-gray-800">
+        <main className="bg-gradient-to-bl from-gray-100 via-gray-300 to-white dark:bg-gradient-to-tr dark:from-gray-800 via-gray-800 dark:to-gray-800 px-10 md:px-20 lg:px-30">
           <Body darkMode={darkMode} setDarkMode={setDarkMode} />
           <Projects />
           <Footer />
