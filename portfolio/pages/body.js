@@ -62,7 +62,7 @@ export default function Body({ darkMode, setDarkMode }) {
           <div className=" mx-24">
             <div className=" bg-moonstone min-w-screen h-96 flex justify-center gap-20 items-center mt-14 rounded-xl dark:bg-transparent">
               <div className="text-center p-1">
-                <h2 className="font-raleway text-5xl py-2 text-eggplant font-medium md:text-5xl sm:text-4xl dark:text-moonstone">
+                <h2 className="font-raleway text-5xl py-2 text-yellow-200 font-medium md:text-5xl sm:text-4xl dark:text-moonstone">
                   Hi, I'm Graeme.
                 </h2>
                 <h3 className="text-2xl py-2 text-gray-800 md:text-3xl dark:text-gray-100">
@@ -92,7 +92,7 @@ export default function Body({ darkMode, setDarkMode }) {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-b from-yellow-200 rounded-full w-80 h-80 mt-6 mb-8 overflow-hidden sm:w-48 sm:h-48 dark:bg-gradient-to-b dark:from-moonstone">
+              <div className="bg-gradient-to-b from-yellow-200 rounded-full w-80 h-80 mt-6 mb-8 overflow-hidden dark:bg-gradient-to-b dark:from-moonstone">
                 <Image src={avatar} objectFit="cover" />
               </div>
             </div>
