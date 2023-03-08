@@ -12,7 +12,7 @@ export default function Projects() {
   return (
     <>
       <div className="flex justify-center pt-6 mt-10">
-        <h3 className="text-5xl py-1 text-gray-700 text-yellow-500">
+        <h3 className="text-5xl py-1 text-gray-700 dark:text-moonstone">
           Projects
         </h3>
       </div>
@@ -20,7 +20,7 @@ export default function Projects() {
       <div className="flex justify-center my-6">
         <div>
           <a href={ecolidayUrl} target="_blank" rel="noreferrer">
-            <h3 className="text-2xl hover:text-yellow-500 pb-2 text-gray-600 dark:text-gray-100 dark:hover:text-yellow-500">
+            <h3 className="text-2xl pb-2 hover:text-bittersweet text-gray-600 dark:text-gray-100 dark:hover:text-yellow-500">
               {" "}
               Ecoliday{" "}
             </h3>
@@ -35,7 +35,7 @@ export default function Projects() {
       <div className="flex justify-center my-10 mb-6">
         <div>
           <a href={recipeaseURL} target="_blank" rel="noreferrer">
-            <h3 className="text-2xl pb-2 hover:text-yellow-500 text-gray-600 dark:text-gray-100 dark:hover:text-yellow-500">
+            <h3 className="text-2xl pb-2 hover:text-bittersweet text-gray-600 dark:text-gray-100 dark:hover:text-yellow-500">
               {" "}
               Recipeas{" "}
             </h3>
@@ -50,7 +50,7 @@ export default function Projects() {
       <div className="flex justify-center my-10">
         <div>
           <a href={mineshaftUrl} target="_blank" rel="noreferrer">
-            <h3 className="text-2xl pb-2 hover:text-yellow-500 text-gray-600 dark:text-gray-100 dark:hover:text-yellow-500">
+            <h3 className="text-2xl pb-2 hover:text-bittersweet text-gray-600 dark:text-gray-100 dark:hover:text-yellow-500">
               {" "}
               Mineshaft{" "}
             </h3>
@@ -64,7 +64,7 @@ export default function Projects() {
       <div className="flex justify-center my-10 mb-6">
         <div>
           <a href={weatherUrl} target="_blank" rel="noreferrer">
-            <h3 className="text-2xl pb-2 hover:text-yellow-500 text-gray-600 dark:text-gray-100 dark:hover:text-yellow-500">
+            <h3 className="text-2xl pb-2 hover:text-bittersweet text-gray-600 dark:text-gray-100 dark:hover:text-yellow-500">
               {" "}
               Weather App{" "}
             </h3>
