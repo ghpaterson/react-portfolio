@@ -37,17 +37,17 @@ export default function Projects() {
         </Head>
         <main className="bg-gradient-to-tr from-cyan-50 via-cyan-100 to-cyan-200 dark:bg-gradient-to-tr dark:from-gray-600 dark:via-gray-700 dark:to-gray-800 px-10 md:px-20 lg:px-30">
           <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
-          <div className="flex justify-center pt-6 mt-10">
-            <h3 className="text-5xl py-1 text-gray-700 dark:text-moonstone">
+          <div className="flex justify-start ml-60">
+            <h3 className="text-5xl py-1 text-bittersweet dark:text-moonstone">
               Projects
             </h3>
           </div>
 
-          <div className="flex justify-center my-6">
+          <div className="flex justify-center my-10">
             <div>
-              <div className="flex items-center gap-4 text-2xl text-gray-600">
+              <div className="flex items-center gap-4 text-2xl text-gray-600 dark:text-gray-100">
                 <a href={ecolidayUrl} target="_blank" rel="noreferrer">
-                  <h3 className="text-2xl pb-2 mr-4 hover:text-bittersweet text-gray-600 dark:text-gray-100 dark:hover:text-yellow-500">
+                  <h3 className="text-3xl pb-2 mr-4 hover:text-bittersweet text-bittersweet dark:text-gray-100 dark:hover:text-moonstone">
                     {" "}
                     Ecoliday{" "}
                   </h3>
@@ -66,11 +66,11 @@ export default function Projects() {
               <Image src={Ecoliday} width={800} className="rounded-lg" />
             </div>
           </div>
-          <div className="flex justify-center my-10 mb-6">
+          <div className="flex justify-center my-10">
             <div>
-              <div className="flex items-center gap-4 text-2xl text-gray-600">
+              <div className="flex items-center gap-4 text-2xl text-gray-600 dark:text-gray-100">
                 <a href={recipeaseURL} target="_blank" rel="noreferrer">
-                  <h3 className="text-2xl pb-2 mr-4 hover:text-bittersweet text-gray-600 dark:text-gray-100 dark:hover:text-yellow-500">
+                  <h3 className="text-3xl pb-2 mr-4 hover:text-bittersweet text-bittersweet dark:text-gray-100 dark:hover:text-moonstone">
                     {" "}
                     Recipeas{" "}
                   </h3>
@@ -88,9 +88,9 @@ export default function Projects() {
           </div>
           <div className="flex justify-center my-10">
             <div>
-              <div className="flex items-center gap-4 text-2xl text-gray-600">
+              <div className="flex items-center gap-4 text-2xl text-gray-600 dark:text-gray-100">
                 <a href={mineshaftUrl} target="_blank" rel="noreferrer">
-                  <h3 className="text-2xl pb-2 mr-4 hover:text-bittersweet text-gray-600 dark:text-gray-100 dark:hover:text-yellow-500">
+                  <h3 className="text-3xl pb-2 mr-4 hover:text-bittersweet text-bittersweet dark:text-gray-100 dark:hover:text-moonstone">
                     {" "}
                     Mineshaft{" "}
                   </h3>
@@ -108,11 +108,11 @@ export default function Projects() {
               <Image src={mineshaft} width={800} className="rounded-lg" />
             </div>
           </div>
-          <div className="flex justify-center my-10 mb-6">
+          <div className="flex justify-center my-10">
             <div>
-              <div className="flex items-center gap-4 text-2xl text-gray-600">
+              <div className="flex items-center gap-4 text-2xl text-gray-600 dark:text-gray-100">
                 <a href={weatherUrl} target="_blank" rel="noreferrer">
-                  <h3 className="text-2xl pb-2 hover:text-bittersweet text-gray-600 dark:text-gray-100 dark:hover:text-yellow-500">
+                  <h3 className="text-3xl pb-2 hover:text-bittersweet text-bittersweet dark:text-gray-100 dark:hover:text-moonstone">
                     {" "}
                     Weather App{" "}
                   </h3>

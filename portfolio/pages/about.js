@@ -1,6 +1,7 @@
 import Head from "next/head";
 import NavBar from "./navBar";
 import Footer from "./footer";
+import { IoConstruct } from "react-icons/io";
 
 import { useState } from "react";
 
@@ -19,9 +20,14 @@ export default function About() {
           <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
           <section className="min-h-screen">
             <div className=" mx-24">
-              <h3 className="flex justify-center text-5xl py-1 text-gray-700 dark:text-moonstone">
+              <h3 className="flex justify-start ml-60 text-5xl py-1 text-seagreen dark:text-moonstone">
                 About
               </h3>
+            </div>
+            <div className="  min-w-screen h-96 flex justify-start p-10 items-start gap-20 mt-10 rounded-xl dark:bg-transparent">
+              <p1 className="text-seagreen dark:text-gray-100 ml-72">
+                UNDER CONSTRUCTION
+              </p1>
             </div>
           </section>
           <Footer />
