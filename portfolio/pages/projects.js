@@ -22,7 +22,7 @@ import { useState } from "react";
 
 export default function Projects() {
   const [darkMode, setDarkMode] = useState(false);
-  const ecolidayUrl = "https://github.com/ghpaterson/Ecoliday";
+  const ecolidayUrl = "https://ecoliday-cxyz.onrender.com/";
   const mineshaftUrl = "https://github.com/ghpaterson/acebook-mineshaft";
   const weatherUrl = "https://github.com/ghpaterson/weather-app";
   const recipeaseURL = "https://github.com/ghpaterson/recipease";
