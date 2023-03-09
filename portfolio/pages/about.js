@@ -1,8 +1,8 @@
 import Head from "next/head";
 import NavBar from "./navBar";
 import Footer from "./footer";
-import { IoConstruct } from "react-icons/io";
-
+import Image from "next/image";
+import avatar from "../public/avatar.png";
 import { useState } from "react";
 
 export default function About() {
@@ -25,6 +25,9 @@ export default function About() {
               </h3>
             </div>
             <div className="  min-w-screen h-96 flex justify-start p-10 items-start gap-20 mt-10 rounded-xl dark:bg-transparent">
+              <div className="bg-gradient-to-b from-lazuli rounded-full w-80 h-80 mt-6 mb-8 overflow-hidden dark:bg-gradient-to-b dark:from-moonstone">
+                <Image src={avatar} objectFit="cover" />
+              </div>
               <p1 className="text-seagreen dark:text-gray-100 ml-72">
                 UNDER CONSTRUCTION
               </p1>
