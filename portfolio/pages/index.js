@@ -17,7 +17,7 @@ export default function Home() {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <main className="dark:bg-gray-800">
+        <main className="dark:bg-bittersweet">
           <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
           <Body />
           <Footer />
