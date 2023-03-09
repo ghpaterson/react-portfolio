@@ -12,63 +12,15 @@ import {
 } from "react-icons/si";
 import { DiRuby } from "react-icons/di";
 import Image from "next/image";
-import Link from "next/link";
 import avatar from "../public/avatar.png";
 
 export default function Body({ darkMode, setDarkMode }) {
   const gitHubUrl = "https://github.com/ghpaterson";
   const linkedInUrl = "https://www.linkedin.com/in/graeme-paterson-25b096268/";
-  const githubCVUrl = "https://github.com/ghpaterson/CV";
   return (
     <>
       <div className={darkMode ? "dark" : ""}>
         <section className="min-h-screen">
-          <nav className=" static py-10 mb-8 flex justify-end">
-            <ul className="flex gap-0">
-              <li>
-                <a
-                  className="text-gray-800 dark:text-gray-100 dark:hover:text-yellow-500 px-4 py-1 border-none rounded-md ml-2 mr-2"
-                  href="/"
-                  target=""
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-gray-800 dark:text-gray-100 dark:hover:text-yellow-500 px-4 py-2 border-none rounded-md ml-2 mr-2"
-                  href="/graeme-paterson-cv.pdf"
-                  target=""
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-gray-800 dark:text-gray-100 dark:hover:text-yellow-500 px-4 py-2 border-none rounded-md ml-2 mr-2"
-                  href="/projects"
-                  target=""
-                >
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-gray-800 dark:text-gray-100 dark:hover:text-yellow-500 px-4 py-2 border-none rounded-md ml-2 mr-2"
-                  href="/graeme-paterson-cv.pdf"
-                  target=""
-                >
-                  Resume
-                </a>
-              </li>
-              <li>
-                <BsFillMoonFill
-                  onClick={() => setDarkMode(!darkMode)}
-                  className="cursor-pointer text-2xl ml-2 hover:animate-pulse text-gray-700 dark:text-yellow-500 "
-                />
-              </li>
-            </ul>
-          </nav>
           <div className=" mx-24">
             <div className=" min-w-screen h-96 flex justify-center gap-20 items-center mt-14 rounded-xl dark:bg-transparent">
               <div className="text-center p-1">

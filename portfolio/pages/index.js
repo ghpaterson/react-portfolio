@@ -2,6 +2,7 @@ import Head from "next/head";
 
 import Footer from "./footer";
 import Body from "./body";
+import NavBar from "./navBar";
 
 import { useState } from "react";
 
@@ -18,7 +19,8 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <main className="bg-gradient-to-tr from-yellow-50 via-yellow-100 to-yellow-200 dark:bg-gradient-to-tr dark:from-gray-600 dark:via-gray-700 dark:to-gray-800 px-10 md:px-20 lg:px-30">
-          <Body darkMode={darkMode} setDarkMode={setDarkMode} />
+          <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
+          <Body />
           <Footer />
         </main>
       </div>
