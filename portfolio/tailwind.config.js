@@ -21,6 +21,7 @@ module.exports = {
     },
     fontFamily: {
       raleway: ["Raleway", "sans-serif"],
+      titillium: ["Titillium Web", "sans-serif"],
     },
   },
   plugins: [],
