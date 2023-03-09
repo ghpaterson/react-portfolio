@@ -1,20 +1,9 @@
-import { BsFillMoonFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import {
-  SiCss3,
-  SiExpress,
-  SiJavascript,
-  SiMongodb,
-  SiNodedotjs,
-  SiNextdotjs,
-  SiReact,
-  SiTailwindcss,
-} from "react-icons/si";
-import { DiRuby } from "react-icons/di";
+
 import Image from "next/image";
 import avatar from "../public/avatar.png";
 
-export default function Body({ darkMode, setDarkMode }) {
+export default function Body({ darkMode }) {
   const gitHubUrl = "https://github.com/ghpaterson";
   const linkedInUrl = "https://www.linkedin.com/in/graeme-paterson-25b096268/";
   return (
@@ -22,7 +11,7 @@ export default function Body({ darkMode, setDarkMode }) {
       <div className={darkMode ? "dark" : ""}>
         <section className="min-h-screen">
           <div className=" mx-24">
-            <div className=" min-w-screen h-96 flex justify-center gap-20 items-center mt-14 rounded-xl dark:bg-transparent">
+            <div className=" min-w-screen h-96 flex justify-center gap-20 items-center mt-24 rounded-xl dark:bg-transparent">
               <div className="text-center p-1">
                 <h2 className="font-raleway text-5xl py-2 text-lazuli font-medium md:text-5xl sm:text-4xl dark:text-moonstone">
                   Hi, I'm Graeme.
@@ -58,17 +47,6 @@ export default function Body({ darkMode, setDarkMode }) {
                 <Image src={avatar} objectFit="cover" />
               </div>
             </div>
-          </div>
-          <div className="text-3xl flex justify-center gap-8 mt-12 py-4 text-gray-600  dark:text-gray-100">
-            <SiJavascript />
-            <DiRuby />
-            <SiMongodb />
-            <SiExpress />
-            <SiReact />
-            <SiNextdotjs />
-            <SiNodedotjs />
-            <SiTailwindcss />
-            <SiCss3 />
           </div>
         </section>
       </div>

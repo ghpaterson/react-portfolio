@@ -23,7 +23,7 @@ export default function NavBar({ darkMode, setDarkMode }) {
             className={`text-gray-800 ${
               darkMode ? "dark:text-gray-100 dark:hover:text-yellow-500" : ""
             } px-4 py-2 border-none rounded-md ml-2 mr-2`}
-            href="/graeme-paterson-cv.pdf"
+            href="/about"
             target=""
           >
             About

@@ -1,13 +1,11 @@
 import Head from "next/head";
-import Footer from "./footer";
-import Body from "./body";
 import NavBar from "./navBar";
+import Footer from "./footer";
 
 import { useState } from "react";
 
-export default function Home() {
+export default function About() {
   const [darkMode, setDarkMode] = useState(false);
-
   return (
     <>
       <div className={darkMode ? "dark" : ""}>
@@ -17,9 +15,15 @@ export default function Home() {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <main className="bg-gradient-to-tr from-yellow-50 via-yellow-100 to-yellow-200 dark:bg-gradient-to-tr dark:from-gray-600 dark:via-gray-700 dark:to-gray-800 px-10 md:px-20 lg:px-30">
+        <main className="bg-gradient-to-tr from-purple-50 via-purple-100 to-purple-200 dark:bg-gradient-to-tr dark:from-gray-600 dark:via-gray-700 dark:to-gray-800 px-10 md:px-20 lg:px-30">
           <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
-          <Body />
+          <section className="min-h-screen">
+            <div className=" mx-24">
+              <h3 className="flex justify-center text-5xl py-1 text-gray-700 dark:text-moonstone">
+                About
+              </h3>
+            </div>
+          </section>
           <Footer />
         </main>
       </div>
