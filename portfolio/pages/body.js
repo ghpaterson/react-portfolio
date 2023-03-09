@@ -12,6 +12,7 @@ import {
 } from "react-icons/si";
 import { DiRuby } from "react-icons/di";
 import Image from "next/image";
+import Link from "next/link";
 import avatar from "../public/avatar.png";
 
 export default function Body({ darkMode, setDarkMode }) {
@@ -26,27 +27,36 @@ export default function Body({ darkMode, setDarkMode }) {
             <ul className="flex gap-0">
               <li>
                 <a
-                  className="text-gray-800 dark:text-gray-100 dark:hover:text-yellow-500 px-4 py-2 border-none rounded-md ml-2 mr-5"
+                  className="text-gray-800 dark:text-gray-100 dark:hover:text-yellow-500 px-4 py-1 border-none rounded-md ml-2 mr-2"
+                  href="/"
+                  target=""
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  className="text-gray-800 dark:text-gray-100 dark:hover:text-yellow-500 px-4 py-2 border-none rounded-md ml-2 mr-2"
                   href="/graeme-paterson-cv.pdf"
-                  target="_blank"
+                  target=""
                 >
                   About
                 </a>
               </li>
               <li>
                 <a
-                  className="text-gray-800 dark:text-gray-100 dark:hover:text-yellow-500 px-4 py-2 border-none rounded-md ml-2 mr-5"
-                  href="/graeme-paterson-cv.pdf"
-                  target="_blank"
+                  className="text-gray-800 dark:text-gray-100 dark:hover:text-yellow-500 px-4 py-2 border-none rounded-md ml-2 mr-2"
+                  href="/projects"
+                  target=""
                 >
                   Projects
                 </a>
               </li>
               <li>
                 <a
-                  className="text-gray-800 dark:text-gray-100 dark:hover:text-yellow-500 px-4 py-2 border-none rounded-md ml-2 mr-5"
+                  className="text-gray-800 dark:text-gray-100 dark:hover:text-yellow-500 px-4 py-2 border-none rounded-md ml-2 mr-2"
                   href="/graeme-paterson-cv.pdf"
-                  target="_blank"
+                  target=""
                 >
                   Resume
                 </a>
