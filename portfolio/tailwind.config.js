@@ -14,6 +14,7 @@ module.exports = {
         moonstone: "#7FB7BE",
         africanViolet: "#b288c0",
         delft: "#183059",
+        verdigris: "#64b6ac",
       },
 
       backgroundImage: {

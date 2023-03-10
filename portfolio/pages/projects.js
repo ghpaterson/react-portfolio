@@ -38,7 +38,7 @@ export default function Projects() {
         <main className="dark:bg-africanViolet px-10 md:px-20 lg:px-30">
           <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
           <div className="flex justify-start ml-60">
-            <h3 className="text-5xl py-1 text-bittersweet dark:text-delft">
+            <h3 className="font-raleway text-5xl py-1 text-bittersweet dark:text-delft">
               Projects
             </h3>
           </div>
