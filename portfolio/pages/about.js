@@ -1,8 +1,8 @@
 import Head from "next/head";
 import NavBar from "./navBar";
 import Footer from "./footer";
-import { IoConstruct } from "react-icons/io";
-
+import Image from "next/image";
+import avatar from "../public/avatar.png";
 import { useState } from "react";
 
 export default function About() {
@@ -16,18 +16,39 @@ export default function About() {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <main className="bg-gradient-to-tr from-purple-50 via-purple-100 to-purple-200 dark:bg-gradient-to-tr dark:from-gray-600 dark:via-gray-700 dark:to-gray-800 px-10 md:px-20 lg:px-30">
+        <main className=" dark:bg-verdigris px-10 md:px-20 lg:px-30">
           <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
           <section className="min-h-screen">
             <div className=" mx-24">
-              <h3 className="flex justify-start ml-60 text-5xl py-1 text-seagreen dark:text-moonstone">
+              <h3 className="font-raleway flex justify-start ml-44 text-5xl py-1 text-bittersweet dark:text-delft">
                 About
               </h3>
             </div>
-            <div className="  min-w-screen h-96 flex justify-start p-10 items-start gap-20 mt-10 rounded-xl dark:bg-transparent">
-              <p1 className="text-seagreen dark:text-gray-100 ml-72">
-                UNDER CONSTRUCTION
-              </p1>
+            <div className="  min-w-screen h-96 flex items-center p-10 gap-28 mt-10 rounded-xl dark:bg-transparent">
+              <div className="flex flex-col justify-center gap-6  w-96 h-40 ml-60">
+                <div className="">
+                  <p1 className="text-gray-100 dark:text-gray-100 ml-60">
+                    I have ten years experience working with patients in public
+                    healthcare systems I have a passion for providing better
+                    services to society and ensuring that everyone from our
+                    communities have equal access to healthcare.
+                  </p1>
+                </div>
+                <div>
+                  <p2 className="text-gray-100 dark:text-gray-100 ml-72">
+                    I’m motivated to work in tech for its potential power to
+                    drive positive change in our world. Having this primary
+                    driver beyond personal or financial gain means I’m motivated
+                    not only to ensure my own work is done well but always
+                    considering the success of the wider project and team as a
+                    whole.
+                  </p2>
+                </div>
+              </div>
+
+              <div className="bg-transparent rounded-full w-80 h-80 mt-6 mb-8 overflow-hidden dark:bg-gradient-to-b dark:from-delft">
+                <Image src={avatar} objectFit="cover" />
+              </div>
             </div>
           </section>
           <Footer />

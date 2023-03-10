@@ -12,7 +12,9 @@ module.exports = {
         seagreen: "#519872",
         lazuli: "#33658A",
         moonstone: "#7FB7BE",
-        eggplant: "#714955",
+        africanViolet: "#b288c0",
+        delft: "#183059",
+        verdigris: "#64b6ac",
       },
 
       backgroundImage: {
@@ -21,6 +23,7 @@ module.exports = {
     },
     fontFamily: {
       raleway: ["Raleway", "sans-serif"],
+      titillium: ["Titillium Web", "sans-serif"],
     },
   },
   plugins: [],

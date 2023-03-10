@@ -1,17 +1,19 @@
 import React from "react";
-import { BsFillMoonFill } from "react-icons/bs";
+import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 
 export default function NavBar({ darkMode, setDarkMode }) {
   return (
     <nav
-      className={`static py-10 mb-4 flex justify-end ${darkMode ? "dark" : ""}`}
+      className={`static py-10 mb-4 mr-8 flex justify-end ${
+        darkMode ? "dark" : ""
+      }`}
     >
       <ul className="flex gap-0">
         <li>
           <a
-            className={`text-gray-800 ${
-              darkMode ? "dark:text-gray-100 dark:hover:text-yellow-500" : ""
-            } px-4 py-1 border-none rounded-md ml-2 mr-2`}
+            className={`font-titillium text-gray-100 hover:text-bittersweet ${
+              darkMode ? "dark:text-gray-100 dark:hover:text-delft" : ""
+            } px-2 py-1 border-none rounded-md ml-2 mr-2`}
             href="/"
             target=""
           >
@@ -20,9 +22,9 @@ export default function NavBar({ darkMode, setDarkMode }) {
         </li>
         <li>
           <a
-            className={`text-gray-800 ${
-              darkMode ? "dark:text-gray-100 dark:hover:text-yellow-500" : ""
-            } px-4 py-2 border-none rounded-md ml-1 mr-1`}
+            className={`font-titillium text-gray-100 hover:text-bittersweet ${
+              darkMode ? "dark:text-gray-100 dark:hover:text-delft" : ""
+            } px-2 py-2 border-none rounded-md ml-1 mr-1`}
             href="/about"
             target=""
           >
@@ -31,9 +33,9 @@ export default function NavBar({ darkMode, setDarkMode }) {
         </li>
         <li>
           <a
-            className={`text-gray-800 ${
-              darkMode ? "dark:text-gray-100 dark:hover:text-yellow-500" : ""
-            } px-4 py-2 border-none rounded-md ml-1 mr-1`}
+            className={` font-titillium text-gray-100 hover:text-bittersweet ${
+              darkMode ? "dark:text-gray-100 dark:hover:text-delft" : ""
+            } px-2 py-2 border-none rounded-md ml-1 mr-1`}
             href="/projects"
             target=""
           >
@@ -42,8 +44,8 @@ export default function NavBar({ darkMode, setDarkMode }) {
         </li>
         <li>
           <a
-            className={`text-gray-800 ${
-              darkMode ? "dark:text-gray-100 dark:hover:text-yellow-500" : ""
+            className={` font-titillium text-gray-100 hover:text-bittersweet ${
+              darkMode ? "dark:text-gray-100 dark:hover:text-delft" : ""
             } px-4 py-2 border-none rounded-md ml-1 mr-1`}
             href="/graeme-cv.pdf"
             target="_blank"
@@ -52,14 +54,17 @@ export default function NavBar({ darkMode, setDarkMode }) {
           </a>
         </li>
         <li>
-          <BsFillMoonFill
-            onClick={() => setDarkMode(!darkMode)}
-            className={`cursor-pointer text-2xl ml-2 hover:animate-pulse ${
-              darkMode
-                ? "text-gray-700 dark:text-yellow-500"
-                : "text-gray-700 dark:text-yellow-500"
-            }`}
-          />
+          {darkMode ? (
+            <BsFillMoonFill
+              onClick={() => setDarkMode(!darkMode)}
+              className="cursor-pointer text-2xl ml-2 text-gray-100 hover:text-yellow-500 dark:text-gray-100 dark:hover:text-delft"
+            />
+          ) : (
+            <BsFillSunFill
+              onClick={() => setDarkMode(!darkMode)}
+              className="cursor-pointer text-2xl ml-2 text-gray-100 hover:text-yellow-500 dark:text-yellow-500"
+            />
+          )}
         </li>
       </ul>
     </nav>
