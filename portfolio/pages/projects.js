@@ -18,10 +18,7 @@ import {
   SiCss3,
 } from "react-icons/si";
 
-import { useState } from "react";
-
-export default function Projects() {
-  const [darkMode, setDarkMode] = useState(false);
+export default function Projects({ darkMode, setDarkMode }) {
   const ecolidayUrl = "https://ecoliday-cxyz.onrender.com/";
   const mineshaftUrl = "https://github.com/ghpaterson/acebook-mineshaft";
   const weatherUrl = "https://github.com/ghpaterson/weather-app";
@@ -35,10 +32,10 @@ export default function Projects() {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <main className="dark:bg-africanViolet px-10 md:px-20 lg:px-30">
+        <main className="dark:bg-africanViolet">
           <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
-          <div className="flex justify-start ml-60">
-            <h3 className="font-raleway text-5xl py-1 text-bittersweet dark:text-delft">
+          <div className="flex justify-start ml-80">
+            <h3 className="font-raleway text-5xl py-4 text-bittersweet dark:text-delft">
               Projects
             </h3>
           </div>

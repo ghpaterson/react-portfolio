@@ -3,10 +3,10 @@ import NavBar from "./navBar";
 import Footer from "./footer";
 import Image from "next/image";
 import avatar from "../public/avatar.png";
-import { useState } from "react";
+import { FaAmbulance } from "react-icons/fa";
+import { MdComputer } from "react-icons/md";
 
-export default function About() {
-  const [darkMode, setDarkMode] = useState(false);
+export default function About({ darkMode, setDarkMode }) {
   return (
     <>
       <div className={darkMode ? "dark" : ""}>
@@ -16,26 +16,19 @@ export default function About() {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <main className=" dark:bg-verdigris px-10 md:px-20 lg:px-30">
+        <main className=" dark:bg-keppel">
           <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
           <section className="min-h-screen">
             <div className=" mx-24">
-              <h3 className="font-raleway flex justify-start ml-44 text-5xl py-1 text-bittersweet dark:text-delft">
+              <h3 className="font-raleway flex justify-start ml-60 text-5xl py-4 text-bittersweet dark:text-delft">
                 About
               </h3>
             </div>
-            <div className="  min-w-screen h-96 flex items-center p-10 gap-28 mt-10 rounded-xl dark:bg-transparent">
-              <div className="flex flex-col justify-center gap-6  w-96 h-40 ml-60">
-                <div className="">
-                  <p1 className="text-gray-100 dark:text-gray-100 ml-60">
-                    I have ten years experience working with patients in public
-                    healthcare systems I have a passion for providing better
-                    services to society and ensuring that everyone from our
-                    communities have equal access to healthcare.
-                  </p1>
-                </div>
+            <div className="  min-w-screen h-96 flex items-center p-10 gap-28 mt-4 rounded-xl dark:bg-transparent">
+              <div className="flex flex-col justify-center gap-6  w-96 h-40 ml-72">
                 <div>
-                  <p2 className="text-gray-100 dark:text-gray-100 ml-72">
+                  <p2 className="text-gray-100 dark:text-gray-100">
+                    <MdComputer className="text-2xl text-gray-100" />
                     I’m motivated to work in tech for its potential power to
                     drive positive change in our world. Having this primary
                     driver beyond personal or financial gain means I’m motivated
@@ -43,6 +36,15 @@ export default function About() {
                     considering the success of the wider project and team as a
                     whole.
                   </p2>
+                </div>
+                <div className="">
+                  <p1 className="text-gray-100 dark:text-gray-100">
+                    <FaAmbulance className="text-2xl" />I have ten years
+                    experience working with patients in public healthcare
+                    systems I have a passion for providing better services to
+                    society and ensuring that everyone from our communities have
+                    equal access to healthcare.
+                  </p1>
                 </div>
               </div>
 
