@@ -3,11 +3,7 @@ import Footer from "./footer";
 import Body from "./body";
 import NavBar from "./navBar";
 
-import { useState } from "react";
-
-export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
-
+export default function Home({ darkMode, setDarkMode }) {
   return (
     <>
       <div className={darkMode ? "dark" : ""}>

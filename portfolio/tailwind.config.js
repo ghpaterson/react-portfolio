@@ -15,6 +15,7 @@ module.exports = {
         africanViolet: "#b288c0",
         delft: "#183059",
         verdigris: "#64b6ac",
+        keppel: "#2ebfa5",
       },
 
       backgroundImage: {

@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 
-export default function NavBar({ darkMode, setDarkMode }) {
+export default function NavBar() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    const storedDarkMode = localStorage.getItem("darkMode");
+    if (storedDarkMode === "true") {
+      setDarkMode(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("darkMode", darkMode.toString());
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [darkMode]);
+
   return (
     <nav
       className={`static py-10 mb-4 mr-8 flex justify-end ${
