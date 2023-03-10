@@ -68,19 +68,19 @@ export default function NavBar() {
             href="/graeme-cv.pdf"
             target="_blank"
           >
-            RESUME
+            CV
           </a>
         </li>
         <li>
           {darkMode ? (
             <BsFillMoonFill
               onClick={() => setDarkMode(!darkMode)}
-              className="cursor-pointer text-2xl ml-2 text-gray-100 hover:text-yellow-500 dark:text-gray-100 dark:hover:text-delft"
+              className="cursor-pointer text-2xl ml-32 text-gray-100 hover:text-yellow-500 dark:text-gray-100 dark:hover:text-delft"
             />
           ) : (
             <BsFillSunFill
               onClick={() => setDarkMode(!darkMode)}
-              className="cursor-pointer text-2xl ml-2 text-gray-100 hover:text-yellow-500 dark:text-yellow-500"
+              className="cursor-pointer text-2xl ml-32 text-gray-100 hover:text-yellow-500 dark:text-yellow-500"
             />
           )}
         </li>

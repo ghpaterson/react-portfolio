@@ -34,15 +34,27 @@ export default function Projects({ darkMode, setDarkMode }) {
         </Head>
         <main className="dark:bg-africanViolet">
           <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
-          <div className="flex justify-start ml-80">
-            <h3 className="font-raleway text-5xl py-4 text-bittersweet dark:text-delft">
-              Projects
-            </h3>
-          </div>
+          <section className="min-h-screen">
+            <div className="mx-24">
+              <div className="min-w-screen h-96 flex justify-start ml-32 gap-20 items-center mt-24 rounded-xl dark:bg-transparent">
+                <div className="text-center p-1">
+                  <h2 className="font-raleway text-5xl py-2 text-bittersweet font-medium md:text-5xl sm:text-4xl dark:text-delft">
+                    Projects
+                  </h2>
+                  <h3 className="text-2xl py-2 text-gray-100 md:text-3xl dark:text-gray-100"></h3>
+                  <p className="text-md py-5 leading-8 text-gray-100 md:text-xl max-w-lg mx-auto dark:text-gray-100">
+                    Welcome to my projects page! Here you'll find a collection
+                    of my latest work, showcasing my skills in Software
+                    Development, design, and more.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
 
-          <div className="flex justify-center my-10">
+          <div className="flex justify-center">
             <div>
-              <div className="flex items-center gap-4 text-2xl text-gray-100 dark:text-gray-100">
+              <div className="flex items-center gap-4 mb-6 text-2xl text-gray-100 dark:text-gray-100">
                 <a href={ecolidayUrl} target="_blank" rel="noreferrer">
                   <h3 className="text-3xl pb-2 mr-4 hover:text-bittersweet text-gray-100 dark:text-gray-100 dark:hover:text-delft">
                     {" "}
@@ -56,20 +68,23 @@ export default function Projects({ darkMode, setDarkMode }) {
                 <SiNodedotjs />
                 <SiTailwindcss />
               </div>
-              <p className="text-l pb-2 text-gray-100 dark:text-gray-100">
-                Users can estimate their carbon emissions of their travel based
-                on different modes of transport.
+              <p className="text-l pb-6 max-w-3xl text-gray-100 dark:text-gray-100">
+                Ecoliday has been developed to enable people to make a more
+                environmentally informed decision when planning a holiday. It
+                provides users with estimated CO2e emissions for different
+                destinations and vehicle types as well as suggesting local
+                alternatives
               </p>
               <Image
                 src={Ecoliday}
                 width={800}
-                className="rounded-lg shadow-2xl"
+                className="rounded-lg shadow-2xl mb-10"
               />
             </div>
           </div>
           <div className="flex justify-center my-10">
             <div>
-              <div className="flex items-center gap-4 text-2xl text-gray-100 dark:text-gray-100">
+              <div className="flex items-center gap-4 mb-6 text-2xl text-gray-100 dark:text-gray-100">
                 <a href={recipeaseURL} target="_blank" rel="noreferrer">
                   <h3 className="text-3xl pb-2 mr-4 hover:text-bittersweet text-gray-100 dark:text-gray-100 dark:hover:text-delft">
                     {" "}
@@ -80,20 +95,26 @@ export default function Projects({ darkMode, setDarkMode }) {
                 <SiReact />
                 <SiTailwindcss />
               </div>
-              <p className="text-l pb-2 text-gray-100 dark:text-gray-100">
-                Food recipe library allowing users to browse by category or
-                search for ingredients using the Spoonacular API
+              <p className="text-l pb-6 max-w-3xl text-gray-100 dark:text-gray-100">
+                Explore a vast collection of delicious recipes with this food
+                recipe library! The web-app allows users to browse recipes by
+                category or search for specific ingredients, thanks to the
+                Spoonacular API integration. Whether you're looking for healthy
+                meals, vegetarian options, or indulgent desserts, the library
+                has something for everyone. Start cooking up a storm today and
+                discover your new favorite dish with this easy-to-use recipe
+                library.
               </p>
               <Image
                 src={homepage}
                 width={800}
-                className="rounded-lg shadow-2xl"
+                className="rounded-lg shadow-2xl mb-10"
               />
             </div>
           </div>
           <div className="flex justify-center my-10">
             <div>
-              <div className="flex items-center gap-4 text-2xl text-gray-100 dark:text-gray-100">
+              <div className="flex items-center gap-4 mb-6 text-2xl text-gray-100 dark:text-gray-100">
                 <a href={mineshaftUrl} target="_blank" rel="noreferrer">
                   <h3 className="text-3xl pb-2 mr-4 hover:text-bittersweet text-gray-100 dark:text-gray-100 dark:hover:text-delft">
                     {" "}
@@ -107,19 +128,19 @@ export default function Projects({ darkMode, setDarkMode }) {
                 <SiNodedotjs />
                 <SiTailwindcss />
               </div>
-              <p className="text-l pb-2 text-gray-100 dark:text-gray-100">
+              <p className="text-l pb-6 text-gray-100 dark:text-gray-100">
                 Facebook clone using the MERN stack
               </p>
               <Image
                 src={mineshaft}
                 width={800}
-                className="rounded-lg shadow-2xl"
+                className="rounded-lg shadow-2xl mb-10"
               />
             </div>
           </div>
           <div className="flex justify-center my-10">
             <div>
-              <div className="flex items-center gap-4 text-2xl text-gray-100 dark:text-gray-100">
+              <div className="flex items-center gap-4 text-2xl mb-6 text-gray-100 dark:text-gray-100">
                 <a href={weatherUrl} target="_blank" rel="noreferrer">
                   <h3 className="text-3xl pb-2 hover:text-bittersweet text-gray-100 dark:text-gray-100 dark:hover:text-delft">
                     {" "}
@@ -130,13 +151,13 @@ export default function Projects({ darkMode, setDarkMode }) {
                 <SiCss3 />
                 <SiHtml5 />
               </div>
-              <p className="text-l pb-2 text-gray-100 dark:text-gray-100">
+              <p className="text-l pb-6 text-gray-100 dark:text-gray-100">
                 Weather based on your current location using the Open-Meteo API
               </p>
               <Image
                 src={weather}
                 width={800}
-                className="rounded-lg shadow-2xl"
+                className="rounded-lg shadow-2xl mb-10"
               />
             </div>
           </div>
