@@ -22,7 +22,7 @@ export default function Body({ darkMode }) {
                 </p>
                 <div className="text-3xl flex justify-center gap-16 py-2 text-gray-100 cursor-pointer dark:text-gray-100">
                   <a
-                    className="hover:text-bittersweet dark:hover:text-lazuli"
+                    className="hover:text-bittersweet dark:hover:text-delft"
                     href={linkedInUrl}
                     target="_blank"
                     rel="noreferrer"
@@ -30,7 +30,7 @@ export default function Body({ darkMode }) {
                     <AiFillLinkedin />
                   </a>
                   <a
-                    className="hover:text-bittersweet dark:hover:text-lazuli"
+                    className="hover:text-bittersweet dark:hover:text-delft"
                     href={gitHubUrl}
                     target="_blank"
                     rel="noreferrer"

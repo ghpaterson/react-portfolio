@@ -3,6 +3,7 @@ import NavBar from "./navBar";
 import Footer from "./footer";
 import Image from "next/image";
 import avatar from "../public/avatar.png";
+import graeme from "../public/graeme.JPG";
 import { FaAmbulance } from "react-icons/fa";
 import { MdComputer } from "react-icons/md";
 
@@ -19,13 +20,13 @@ export default function About({ darkMode, setDarkMode }) {
         <main className=" dark:bg-airblue">
           <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
           <section className="min-h-screen">
-            <div className=" mx-24 my-10">
+            <div className=" mx-24 my-6 md:my-4">
               <h3 className="font-raleway flex justify-center text-4xl md:text-5xl py-4 text-bittersweet dark:text-delft md:justify-start md:ml-60 lg:justify-center lg:ml-0">
                 About
               </h3>
             </div>
-            <div className="  min-w-screen h-96 p-10 gap-28 mt-4 rounded-xl dark:bg-transparent md:flex md:justify-center">
-              <div className="flex flex-col justify-center gap-6 md:justify-center md:w-96 md:items-center md:ml-14">
+            <div className="  min-w-screen h-96 p-10 gap-28 mt-2 rounded-xl dark:bg-transparent md:flex md:justify-center md:items-center">
+              <div className="flex flex-col justify-center gap-6 mt-10 md:justify-center md:w-96 md:ml-14">
                 <div>
                   <p2 className="text-gray-100 dark:text-gray-100">
                     <MdComputer className="text-3xl text-gray-100" />
@@ -49,7 +50,7 @@ export default function About({ darkMode, setDarkMode }) {
                 </div>
               </div>
 
-              <div className="bg-transparent rounded-full w-80 h-80 mb-8 overflow-hidden dark:bg-gradient-to-b dark:from-delft hidden md:block">
+              <div className="bg-transparent rounded-full h-72 w-72 overflow-hidden  dark:bg-gradient-to-b dark:from-delft hidden md:block">
                 <div className="">
                   <Image src={avatar} objectFit="cover" />
                 </div>
