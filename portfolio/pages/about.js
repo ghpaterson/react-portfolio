@@ -3,7 +3,6 @@ import NavBar from "./navBar";
 import Footer from "./footer";
 import Image from "next/image";
 import avatar from "../public/avatar.png";
-import graeme from "../public/graeme.JPG";
 import { FaAmbulance } from "react-icons/fa";
 import { MdComputer } from "react-icons/md";
 
