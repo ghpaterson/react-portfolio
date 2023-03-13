@@ -16,7 +16,7 @@ export default function About({ darkMode, setDarkMode }) {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <main className=" dark:bg-keppel">
+        <main className=" dark:bg-airblue">
           <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
           <section className="min-h-screen">
             <div className=" mx-24">
