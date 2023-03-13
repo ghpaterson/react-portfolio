@@ -22,7 +22,7 @@ export default function NavBar() {
 
   return (
     <nav
-      className={`static py-10 mb-4 mr-8 flex justify-end ${
+      className={`static py-10 mb-4 flex justify-center md:justify-end md:mr-8 ${
         darkMode ? "dark" : ""
       }`}
     >
@@ -75,12 +75,12 @@ export default function NavBar() {
           {darkMode ? (
             <BsFillMoonFill
               onClick={() => setDarkMode(!darkMode)}
-              className="cursor-pointer text-2xl ml-32 text-gray-100 hover:text-yellow-500 dark:text-gray-100 dark:hover:text-delft"
+              className="cursor-pointer text-2xl ml-4 text-gray-100 hover:text-yellow-500 dark:text-gray-100 dark:hover:text-delft md:ml-32"
             />
           ) : (
             <BsFillSunFill
               onClick={() => setDarkMode(!darkMode)}
-              className="cursor-pointer text-2xl ml-32 text-gray-100 hover:text-yellow-500 dark:text-yellow-500"
+              className="cursor-pointer text-2xl ml-4 text-gray-100 hover:text-yellow-500 dark:text-yellow-500 md:ml-32"
             />
           )}
         </li>
