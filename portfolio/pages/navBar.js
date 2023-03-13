@@ -75,12 +75,12 @@ export default function NavBar() {
           {darkMode ? (
             <BsFillMoonFill
               onClick={() => setDarkMode(!darkMode)}
-              className="cursor-pointer text-2xl ml-4 text-gray-100 hover:text-yellow-500 dark:text-gray-100 dark:hover:text-delft md:ml-32"
+              className="cursor-pointer text-2xl ml-4 text-gray-100 hover:text-yellow-500 dark:text-gray-100 dark:hover:text-delft md:ml-32 md:mr-4"
             />
           ) : (
             <BsFillSunFill
               onClick={() => setDarkMode(!darkMode)}
-              className="cursor-pointer text-2xl ml-4 text-gray-100 hover:text-yellow-500 dark:text-yellow-500 md:ml-32"
+              className="cursor-pointer text-2xl ml-4 text-gray-100 hover:text-yellow-500 dark:text-yellow-500 md:ml-32 md:mr-4"
             />
           )}
         </li>
