@@ -16,19 +16,19 @@ export default function About({ darkMode, setDarkMode }) {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <main className=" dark:bg-keppel">
+        <main className=" dark:bg-airblue">
           <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
           <section className="min-h-screen">
-            <div className=" mx-24">
-              <h3 className="font-raleway flex justify-start ml-60 text-5xl py-4 text-bittersweet dark:text-delft">
+            <div className=" mx-24 my-10">
+              <h3 className="font-raleway flex justify-center text-5xl py-4 text-bittersweet dark:text-delft md:justify-start md:ml-60">
                 About
               </h3>
             </div>
-            <div className="  min-w-screen h-96 flex items-center p-10 gap-28 mt-4 rounded-xl dark:bg-transparent">
-              <div className="flex flex-col justify-center gap-6  w-96 h-40 ml-72">
+            <div className="  min-w-screen h-96 p-10 gap-28 mt-4 rounded-xl dark:bg-transparent md:flex md:justify-center">
+              <div className="flex flex-col justify-center gap-6 md:justify-center md:w-96 md:items-center md:ml-14">
                 <div>
                   <p2 className="text-gray-100 dark:text-gray-100">
-                    <MdComputer className="text-2xl text-gray-100" />
+                    <MdComputer className="text-3xl text-gray-100" />
                     I’m motivated to work in tech for its potential power to
                     drive positive change in our world. Having this primary
                     driver beyond personal or financial gain means I’m motivated
@@ -39,7 +39,7 @@ export default function About({ darkMode, setDarkMode }) {
                 </div>
                 <div className="">
                   <p1 className="text-gray-100 dark:text-gray-100">
-                    <FaAmbulance className="text-2xl" />I have ten years
+                    <FaAmbulance className="text-3xl" />I have ten years
                     experience working with patients in public healthcare
                     systems I have a passion for providing better services to
                     society and ensuring that everyone from our communities have
@@ -48,8 +48,10 @@ export default function About({ darkMode, setDarkMode }) {
                 </div>
               </div>
 
-              <div className="bg-transparent rounded-full w-80 h-80 mt-6 mb-8 overflow-hidden dark:bg-gradient-to-b dark:from-delft">
-                <Image src={avatar} objectFit="cover" />
+              <div className="bg-transparent rounded-full w-80 h-80 mb-8 overflow-hidden dark:bg-gradient-to-b dark:from-delft hidden md:block">
+                <div className="">
+                  <Image src={avatar} objectFit="cover" />
+                </div>
               </div>
             </div>
           </section>

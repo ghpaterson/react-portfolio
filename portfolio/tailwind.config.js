@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         bittersweet: "#E87461",
-        seagreen: "#519872",
+        airblue: "#6d9dc5",
         lazuli: "#33658A",
         moonstone: "#7FB7BE",
         africanViolet: "#b288c0",
