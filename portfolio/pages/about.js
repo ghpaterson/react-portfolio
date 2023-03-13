@@ -24,8 +24,8 @@ export default function About({ darkMode, setDarkMode }) {
                 About
               </h3>
             </div>
-            <div className="  min-w-screen h-96 p-10 gap-28 mt-4 rounded-xl dark:bg-transparent">
-              <div className="flex flex-col justify-center gap-6">
+            <div className="  min-w-screen h-96 p-10 gap-28 mt-4 rounded-xl dark:bg-transparent md:flex md:justify-center">
+              <div className="flex flex-col justify-center gap-6 md:justify-center md:w-96 md:items-center md:ml-14">
                 <div>
                   <p2 className="text-gray-100 dark:text-gray-100">
                     <MdComputer className="text-3xl text-gray-100" />
@@ -48,8 +48,8 @@ export default function About({ darkMode, setDarkMode }) {
                 </div>
               </div>
 
-              <div className="bg-transparent rounded-full w-80 h-80 mt-6 mb-8 overflow-hidden dark:bg-gradient-to-b dark:from-delft hidden md:block">
-                <div className="hidden md:block">
+              <div className="bg-transparent rounded-full w-80 h-80 mb-8 overflow-hidden dark:bg-gradient-to-b dark:from-delft hidden md:block">
+                <div className="">
                   <Image src={avatar} objectFit="cover" />
                 </div>
               </div>
