@@ -20,7 +20,7 @@ export default function About({ darkMode, setDarkMode }) {
           <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
           <section className="min-h-screen">
             <div className=" mx-24 my-10">
-              <h3 className="font-raleway flex justify-center text-5xl py-4 text-bittersweet dark:text-delft md:justify-start md:ml-60">
+              <h3 className="font-raleway flex justify-center text-4xl md:text-5xl py-4 text-bittersweet dark:text-delft md:justify-start md:ml-60 lg:justify-center lg:ml-0">
                 About
               </h3>
             </div>
@@ -43,7 +43,8 @@ export default function About({ darkMode, setDarkMode }) {
                     experience working with patients in public healthcare
                     systems I have a passion for providing better services to
                     society and ensuring that everyone from our communities have
-                    equal access to healthcare.
+                    equal access to things that make their lives healthier and
+                    more fulfilling.
                   </p1>
                 </div>
               </div>
