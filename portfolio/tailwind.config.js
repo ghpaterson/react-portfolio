@@ -19,7 +19,9 @@ module.exports = {
       },
 
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "about-pattern": "url('../public/blue_texture.svg')",
+        "body-pattern": "url('../public/red_texture.svg')",
+        "project-pattern": "url('../public/violet_texture.svg')",
       },
     },
     fontFamily: {

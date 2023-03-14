@@ -16,15 +16,15 @@ export default function About({ darkMode, setDarkMode }) {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <main className=" dark:bg-airblue">
+        <main className="dark:bg-about-pattern dark:bg-no-repeat dark:bg-cover dark:bg-fixed">
           <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
-          <section className="min-h-screen">
+          <section className="min-h-screen mb-6">
             <div className=" mx-24 my-6 md:my-4">
               <h3 className="font-raleway flex justify-center text-4xl md:text-5xl py-4 text-bittersweet dark:text-delft md:justify-start md:ml-60 lg:justify-center lg:ml-0">
                 About
               </h3>
             </div>
-            <div className="  min-w-screen h-96 p-10 gap-28 mt-2 rounded-xl dark:bg-transparent md:flex md:justify-center md:items-center">
+            <div className="  min-w-screen h-96 p-10 gap-28 mt-2 mb-8 rounded-xl dark:bg-transparent md:flex md:justify-center md:items-center">
               <div className="flex flex-col justify-center gap-6 mt-10 md:justify-center md:w-96 md:ml-14">
                 <div>
                   <p2 className="text-gray-100 dark:text-gray-100">
@@ -49,7 +49,7 @@ export default function About({ darkMode, setDarkMode }) {
                 </div>
               </div>
 
-              <div className="bg-transparent rounded-full h-72 w-72 overflow-hidden  dark:bg-gradient-to-b dark:from-delft hidden md:block">
+              <div className="bg-transparent rounded-full h-72 w-72 overflow-hidden  dark:bg-transparent hidden md:block">
                 <div className="">
                   <Image src={avatar} objectFit="cover" />
                 </div>

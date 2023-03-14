@@ -32,7 +32,7 @@ export default function Projects({ darkMode, setDarkMode }) {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <main className="dark:bg-africanViolet">
+        <main className=" dark:bg-project-pattern">
           <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
           <section className="h-96 mb-32 md:mb-44 lg:mb-96">
             <div className="mx-24">
