@@ -34,7 +34,7 @@ export default function Projects({ darkMode, setDarkMode }) {
         </Head>
         <main className=" dark:bg-project-pattern">
           <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
-          <section className="h-96 mb-32 md:mb-44 lg:mb-96">
+          <section className="h-96 mb-32 md:mb-44 lg:mb-66">
             <div className="mx-24">
               <div className="min-w-screen h-96 flex justify-start items-center mt-20 rounded-xl dark:bg-transparent md:ml-32 md:mt-24">
                 <div className="text-center p-1">
