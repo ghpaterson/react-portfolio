@@ -19,9 +19,9 @@ module.exports = {
       },
 
       backgroundImage: {
-        "about-pattern": "url('../public/blue_texture.svg')",
-        "body-pattern": "url('../public/red_texture.svg')",
-        "project-pattern": "url('../public/violet_texture.svg')",
+        "about-pattern": "url('/blue_texture.svg')",
+        "body-pattern": "url('/red_texture.svg')",
+        "project-pattern": "url('/violet_texture.svg')",
       },
     },
     fontFamily: {
