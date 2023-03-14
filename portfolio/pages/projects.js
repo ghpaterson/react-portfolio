@@ -54,9 +54,9 @@ export default function Projects({ darkMode, setDarkMode }) {
 
           <div className="flex justify-center">
             <div>
-              <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-gray-100 dark:text-gray-100 ">
+              <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-3xl text-gray-100 dark:text-gray-100 ">
                 <a href={ecolidayUrl} target="_blank" rel="noreferrer">
-                  <h3 className="text-3xl pb-2 mr-4 hover:text-bittersweet text-gray-100 dark:text-gray-100 dark:hover:text-delft">
+                  <h3 className="text-3xl pb-2 mr-4 hover:text-bittersweet text-gray-100 dark:text-delft dark:hover:text-delft">
                     {" "}
                     Ecoliday{" "}
                   </h3>
@@ -92,7 +92,7 @@ export default function Projects({ darkMode, setDarkMode }) {
             <div>
               <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-gray-100 dark:text-gray-100 ">
                 <a href={recipeaseURL} target="_blank" rel="noreferrer">
-                  <h3 className="text-3xl pb-2 mr-4 hover:text-bittersweet text-gray-100 dark:text-gray-100 dark:hover:text-delft">
+                  <h3 className="text-3xl pb-2 mr-4 hover:text-bittersweet text-gray-100 dark:text-delft dark:hover:text-delft">
                     {" "}
                     Recipeas{" "}
                   </h3>
@@ -128,7 +128,7 @@ export default function Projects({ darkMode, setDarkMode }) {
             <div>
               <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-gray-100 dark:text-gray-100 ">
                 <a href={mineshaftUrl} target="_blank" rel="noreferrer">
-                  <h3 className="text-3xl pb-2 mr-4 hover:text-bittersweet text-gray-100 dark:text-gray-100 dark:hover:text-delft">
+                  <h3 className="text-3xl pb-2 mr-4 hover:text-bittersweet text-gray-100 dark:text-delft dark:hover:text-delft">
                     {" "}
                     Mineshaft{" "}
                   </h3>
@@ -162,7 +162,7 @@ export default function Projects({ darkMode, setDarkMode }) {
             <div>
               <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-gray-100 dark:text-gray-100">
                 <a href={weatherUrl} target="_blank" rel="noreferrer">
-                  <h3 className="text-3xl pb-2 hover:text-bittersweet text-gray-100 dark:text-gray-100 dark:hover:text-delft">
+                  <h3 className="text-3xl pb-2 hover:text-bittersweet text-gray-100 dark:text-delft dark:hover:text-delft">
                     {" "}
                     Weather App{" "}
                   </h3>
