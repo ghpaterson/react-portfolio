@@ -52,7 +52,7 @@ export default function Projects({ darkMode, setDarkMode }) {
             </div>
           </section>
 
-          <div className="bg-gray-100 bg-opacity-20 px-4 py-4 flex justify-center mx-5 my-10">
+          <div className="bg-gray-100 bg-opacity-10 dark:bg-opacity-20 rounded-2xl px-4 py-4 flex justify-center mx-5 my-10 lg:mx-32">
             <div>
               <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-3xl text-gray-100 dark:text-gray-100 ">
                 <a href={ecolidayUrl} target="_blank" rel="noreferrer">
@@ -88,7 +88,7 @@ export default function Projects({ darkMode, setDarkMode }) {
               </div>
             </div>
           </div>
-          <div className="bg-gray-100 bg-opacity-20 px-4 py-4 flex justify-center mx-5 my-10">
+          <div className="bg-gray-100 bg-opacity-10 dark:bg-opacity-20 rounded-2xl px-4 py-4 flex justify-center mx-5 my-10 lg:mx-32">
             <div>
               <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-gray-100 dark:text-gray-100 ">
                 <a href={recipeaseURL} target="_blank" rel="noreferrer">
@@ -124,7 +124,7 @@ export default function Projects({ darkMode, setDarkMode }) {
               </div>
             </div>
           </div>
-          <div className="bg-gray-100 bg-opacity-20 px-4 py-4 flex justify-center mx-5 my-10">
+          <div className="bg-gray-100 bg-opacity-10 dark:bg-opacity-20 rounded-2xl px-4 py-4 flex justify-center mx-5 my-10 lg:mx-32">
             <div>
               <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-gray-100 dark:text-gray-100 ">
                 <a href={mineshaftUrl} target="_blank" rel="noreferrer">
@@ -158,7 +158,7 @@ export default function Projects({ darkMode, setDarkMode }) {
               </div>
             </div>
           </div>
-          <div className=" bg-gray-100 bg-opacity-20 px-4 py-4 flex justify-center mx-5 my-10">
+          <div className=" bg-gray-100 bg-opacity-10 dark:bg-opacity-20 rounded-2xl px-4 py-4 flex justify-center mx-5 my-10 lg:mx-32">
             <div className="">
               <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-gray-100 dark:text-gray-100">
                 <a href={weatherUrl} target="_blank" rel="noreferrer">

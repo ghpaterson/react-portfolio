@@ -34,7 +34,7 @@ export default function About({ darkMode, setDarkMode }) {
               </div>
             </div>
           </section>
-          <section className=" mb-28">
+          <section className=" mb-80 lg:mb-32">
             <div className="  min-w-screen h-96 p-10 gap-28 mt-2 mb-8 rounded-xl dark:bg-transparent md:flex md:justify-center md:items-center">
               <div className="flex flex-col justify-center gap-6 mt-10 md:justify-center md:w-96 md:ml-14">
                 <div>
