@@ -34,15 +34,15 @@ export default function Projects({ darkMode, setDarkMode }) {
         </Head>
         <main className=" dark:bg-project-pattern">
           <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
-          <section className="h-96 mb-32 md:mb-44 lg:mb-96">
+          <section className="h-96 mb-32 md:mb-44 lg:mb-66">
             <div className="mx-24">
               <div className="min-w-screen h-96 flex justify-start items-center mt-20 rounded-xl dark:bg-transparent md:ml-32 md:mt-24">
                 <div className="text-center p-1">
-                  <h2 className="font-raleway text-4xl py-2 text-bittersweet font-medium md:text-5xl  dark:text-delft">
+                  <h2 className="font-thasadith text-4xl py-2 text-bittersweet font-extrabold md:text-5xl  dark:text-delft">
                     Projects
                   </h2>
                   <h3 className="text-2xl py-2 text-gray-100 md:text-3xl dark:text-gray-100"></h3>
-                  <p className="text-md py-5 leading-8 text-gray-100 md:text-xl max-w-lg mx-auto dark:text-gray-100">
+                  <p className=" font-thasadith text-md py-5 leading-8 text-gray-100 md:text-xl max-w-lg mx-auto dark:text-gray-100">
                     Welcome to my projects page! Here you'll find a collection
                     of my latest work, showcasing my skills in Software
                     Development, design, and more.
@@ -52,11 +52,11 @@ export default function Projects({ darkMode, setDarkMode }) {
             </div>
           </section>
 
-          <div className="flex justify-center">
+          <div className="bg-gray-100 bg-opacity-20 px-4 py-4 flex justify-center mx-5 my-10">
             <div>
-              <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-gray-100 dark:text-gray-100 ">
+              <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-3xl text-gray-100 dark:text-gray-100 ">
                 <a href={ecolidayUrl} target="_blank" rel="noreferrer">
-                  <h3 className="text-3xl pb-2 mr-4 hover:text-bittersweet text-gray-100 dark:text-gray-100 dark:hover:text-delft">
+                  <h3 className=" font-thasadith font-extrabold text-3xl pb-2 mr-4 hover:text-bittersweet text-gray-100 dark:text-delft dark:hover:text-delft">
                     {" "}
                     Ecoliday{" "}
                   </h3>
@@ -88,11 +88,11 @@ export default function Projects({ darkMode, setDarkMode }) {
               </div>
             </div>
           </div>
-          <div className="flex justify-center my-10">
+          <div className="bg-gray-100 bg-opacity-20 px-4 py-4 flex justify-center mx-5 my-10">
             <div>
               <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-gray-100 dark:text-gray-100 ">
                 <a href={recipeaseURL} target="_blank" rel="noreferrer">
-                  <h3 className="text-3xl pb-2 mr-4 hover:text-bittersweet text-gray-100 dark:text-gray-100 dark:hover:text-delft">
+                  <h3 className=" font-thasadith font-extrabold text-3xl pb-2 mr-4 hover:text-bittersweet text-gray-100 dark:text-delft dark:hover:text-delft">
                     {" "}
                     Recipeas{" "}
                   </h3>
@@ -124,11 +124,11 @@ export default function Projects({ darkMode, setDarkMode }) {
               </div>
             </div>
           </div>
-          <div className="flex justify-center my-10">
+          <div className="bg-gray-100 bg-opacity-20 px-4 py-4 flex justify-center mx-5 my-10">
             <div>
               <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-gray-100 dark:text-gray-100 ">
                 <a href={mineshaftUrl} target="_blank" rel="noreferrer">
-                  <h3 className="text-3xl pb-2 mr-4 hover:text-bittersweet text-gray-100 dark:text-gray-100 dark:hover:text-delft">
+                  <h3 className=" font-thasadith font-extrabold text-3xl pb-2 mr-4 hover:text-bittersweet text-gray-100 dark:text-delft dark:hover:text-delft">
                     {" "}
                     Mineshaft{" "}
                   </h3>
@@ -158,11 +158,11 @@ export default function Projects({ darkMode, setDarkMode }) {
               </div>
             </div>
           </div>
-          <div className="flex justify-center my-10">
-            <div>
+          <div className=" bg-gray-100 bg-opacity-20 px-4 py-4 flex justify-center mx-5 my-10">
+            <div className="">
               <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-gray-100 dark:text-gray-100">
                 <a href={weatherUrl} target="_blank" rel="noreferrer">
-                  <h3 className="text-3xl pb-2 hover:text-bittersweet text-gray-100 dark:text-gray-100 dark:hover:text-delft">
+                  <h3 className=" font-thasadith font-extrabold text-3xl pb-2 hover:text-bittersweet text-gray-100 dark:text-delft dark:hover:text-delft">
                     {" "}
                     Weather App{" "}
                   </h3>
