@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: "inconstant";
-  src: url("../public/fonts/InconstantVF.ttf") format("truetype");
+  src: url("/fonts/InconstantVF.ttf") format("truetype");
 }
 
 :root {
