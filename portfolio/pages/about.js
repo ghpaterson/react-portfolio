@@ -22,11 +22,11 @@ export default function About({ darkMode, setDarkMode }) {
             <div className="mx-24">
               <div className="min-w-screen h-96 flex justify-start items-center mt-20 rounded-xl dark:bg-transparent md:ml-32 md:mt-24">
                 <div className="text-center p-1">
-                  <h2 className="font-thasadith  text-4xl py-2 text-bittersweet font-extrabold md:text-5xl  dark:text-delft">
+                  <h2 className="font-inconstant  text-4xl py-2 text-bittersweet font-extrabold md:text-5xl  dark:text-delft">
                     About
                   </h2>
                   <h3 className="text-2xl py-2 text-gray-100 md:text-3xl dark:text-gray-100"></h3>
-                  <p className=" font-thasadith text-md py-5 leading-8 text-gray-100 md:text-xl max-w-lg mx-auto dark:text-gray-100">
+                  <p className=" font-inconstant text-md py-5 leading-8 text-gray-100 md:text-xl max-w-lg mx-auto dark:text-gray-100">
                     Open your knowledge basket! Scroll down to learn a little
                     bit about me.
                   </p>
@@ -38,7 +38,7 @@ export default function About({ darkMode, setDarkMode }) {
             <div className="  min-w-screen h-96 p-10 gap-28 mt-2 mb-8 rounded-xl dark:bg-transparent md:flex md:justify-center md:items-center">
               <div className="flex flex-col justify-center gap-6 mt-10 md:justify-center md:w-96 md:ml-14">
                 <div>
-                  <p2 className="text-gray-100 dark:text-gray-100">
+                  <p2 className="font-inconstant text-gray-100 dark:text-gray-100">
                     <MdComputer className="text-3xl text-gray-100" />
                     I’m motivated to work in tech for its potential power to
                     drive positive change in our world. Having this primary
@@ -49,7 +49,7 @@ export default function About({ darkMode, setDarkMode }) {
                   </p2>
                 </div>
                 <div className="">
-                  <p1 className="text-gray-100 dark:text-gray-100">
+                  <p1 className="font-inconstant text-gray-100 dark:text-gray-100">
                     <FaAmbulance className="text-3xl" />I have ten years
                     experience working with patients in public healthcare
                     systems I have a passion for providing better services to

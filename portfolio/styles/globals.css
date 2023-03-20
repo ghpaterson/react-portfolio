@@ -7,6 +7,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "inconstant";
+  src: url("../public/fonts/InconstantVF.ttf");
+}
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;

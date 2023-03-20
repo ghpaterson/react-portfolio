@@ -29,7 +29,7 @@ export default function NavBar() {
       <ul className="flex gap-0">
         <li>
           <a
-            className={`font-thasadith font-bold text-gray-100 hover:text-bittersweet ${
+            className={`font-inconstant font-bold text-gray-100 hover:text-bittersweet ${
               darkMode ? "dark:text-gray-100 dark:hover:text-delft" : ""
             } px-2 py-1 border-none rounded-md ml-2 mr-2`}
             href="/"
@@ -40,7 +40,7 @@ export default function NavBar() {
         </li>
         <li>
           <a
-            className={`font-thasadith font-bold text-gray-100 hover:text-bittersweet ${
+            className={`font-inconstant font-bold text-gray-100 hover:text-bittersweet ${
               darkMode ? "dark:text-gray-100 dark:hover:text-delft" : ""
             } px-2 py-2 border-none rounded-md ml-1 mr-1`}
             href="/about"
@@ -51,7 +51,7 @@ export default function NavBar() {
         </li>
         <li>
           <a
-            className={`font-thasadith font-bold text-gray-100 hover:text-bittersweet ${
+            className={`font-inconstant font-bold text-gray-100 hover:text-bittersweet ${
               darkMode ? "dark:text-gray-100 dark:hover:text-delft" : ""
             } px-2 py-2 border-none rounded-md ml-1 mr-1`}
             href="/projects"
@@ -62,7 +62,7 @@ export default function NavBar() {
         </li>
         <li>
           <a
-            className={`font-thasadith font-bold text-gray-100 hover:text-bittersweet ${
+            className={`font-inconstant font-bold text-gray-100 hover:text-bittersweet ${
               darkMode ? "dark:text-gray-100 dark:hover:text-delft" : ""
             } px-4 py-2 border-none rounded-md ml-1 mr-1`}
             href="/graeme-cv.pdf"

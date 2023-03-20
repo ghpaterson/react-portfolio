@@ -38,11 +38,11 @@ export default function Projects({ darkMode, setDarkMode }) {
             <div className="mx-24">
               <div className="min-w-screen h-96 flex justify-start items-center mt-20 rounded-xl dark:bg-transparent md:ml-32 md:mt-24">
                 <div className="text-center p-1">
-                  <h2 className="font-thasadith text-4xl py-2 text-bittersweet font-extrabold md:text-5xl  dark:text-delft">
+                  <h2 className="font-inconstant text-4xl py-2 text-bittersweet font-extrabold md:text-5xl  dark:text-delft">
                     Projects
                   </h2>
                   <h3 className="text-2xl py-2 text-gray-100 md:text-3xl dark:text-gray-100"></h3>
-                  <p className=" font-thasadith text-md py-5 leading-8 text-gray-100 md:text-xl max-w-lg mx-auto dark:text-gray-100">
+                  <p className=" font-inconstant text-md py-5 leading-8 text-gray-100 md:text-xl max-w-lg mx-auto dark:text-gray-100">
                     Welcome to my projects page! Here you'll find a collection
                     of my latest work, showcasing my skills in Software
                     Development, design, and more.
@@ -56,7 +56,7 @@ export default function Projects({ darkMode, setDarkMode }) {
             <div>
               <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-3xl text-gray-100 dark:text-gray-100 ">
                 <a href={ecolidayUrl} target="_blank" rel="noreferrer">
-                  <h3 className=" font-thasadith font-extrabold text-3xl pb-2 mr-4 hover:text-bittersweet text-gray-100 dark:text-delft dark:hover:text-delft">
+                  <h3 className=" font-inconstant font-extrabold text-3xl pb-2 mr-4 hover:text-bittersweet text-gray-100 dark:text-delft dark:hover:text-delft">
                     {" "}
                     Ecoliday{" "}
                   </h3>
@@ -71,7 +71,7 @@ export default function Projects({ darkMode, setDarkMode }) {
                 </div>
               </div>
               <div className="flex justify-center mx-4 text-justify md:justify-start md:mx-0">
-                <p className=" text-sm pb-6 max-w-3xl text-gray-100 dark:text-gray-100 md:text-base">
+                <p className="font-inconstant text-sm pb-6 max-w-3xl text-gray-100 dark:text-gray-100 md:text-base">
                   Ecoliday has been developed to enable people to make a more
                   environmentally informed decision when planning a holiday. It
                   provides users with estimated CO2e emissions for different
@@ -92,7 +92,7 @@ export default function Projects({ darkMode, setDarkMode }) {
             <div>
               <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-gray-100 dark:text-gray-100 ">
                 <a href={recipeaseURL} target="_blank" rel="noreferrer">
-                  <h3 className=" font-thasadith font-extrabold text-3xl pb-2 mr-4 hover:text-bittersweet text-gray-100 dark:text-delft dark:hover:text-delft">
+                  <h3 className=" font-inconstant font-extrabold text-3xl pb-2 mr-4 hover:text-bittersweet text-gray-100 dark:text-delft dark:hover:text-delft">
                     {" "}
                     Recipeas{" "}
                   </h3>
@@ -104,7 +104,7 @@ export default function Projects({ darkMode, setDarkMode }) {
                 </div>
               </div>
               <div className="flex justify-center mx-4 text-justify md:justify-start md:mx-0">
-                <p className="text-sm md:text-base pb-6 max-w-3xl text-gray-100 dark:text-gray-100">
+                <p className="font-inconstant text-sm md:text-base pb-6 max-w-3xl text-gray-100 dark:text-gray-100">
                   Explore a vast collection of delicious recipes with this food
                   recipe library! The web-app allows users to browse recipes by
                   category or search for specific ingredients, thanks to the
@@ -128,7 +128,7 @@ export default function Projects({ darkMode, setDarkMode }) {
             <div>
               <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-gray-100 dark:text-gray-100 ">
                 <a href={mineshaftUrl} target="_blank" rel="noreferrer">
-                  <h3 className=" font-thasadith font-extrabold text-3xl pb-2 mr-4 hover:text-bittersweet text-gray-100 dark:text-delft dark:hover:text-delft">
+                  <h3 className=" font-inconstant font-extrabold text-3xl pb-2 mr-4 hover:text-bittersweet text-gray-100 dark:text-delft dark:hover:text-delft">
                     {" "}
                     Mineshaft{" "}
                   </h3>
@@ -143,7 +143,7 @@ export default function Projects({ darkMode, setDarkMode }) {
                 </div>
               </div>
               <div className="flex justify-center mx-4 text-justify md:justify-start md:mx-0">
-                <p className="text-sm md:text-base pb-6 max-w-3xl text-gray-100 dark:text-gray-100">
+                <p className="font-inconstant text-sm md:text-base pb-6 max-w-3xl text-gray-100 dark:text-gray-100">
                   Facebook clone using the MERN stack. Allowing users to create
                   an account and login. Users can write and like posts as well
                   as comment.
@@ -162,7 +162,7 @@ export default function Projects({ darkMode, setDarkMode }) {
             <div className="">
               <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-gray-100 dark:text-gray-100">
                 <a href={weatherUrl} target="_blank" rel="noreferrer">
-                  <h3 className=" font-thasadith font-extrabold text-3xl pb-2 hover:text-bittersweet text-gray-100 dark:text-delft dark:hover:text-delft">
+                  <h3 className=" font-inconstant font-extrabold text-3xl pb-2 hover:text-bittersweet text-gray-100 dark:text-delft dark:hover:text-delft">
                     {" "}
                     Weather App{" "}
                   </h3>
@@ -174,7 +174,7 @@ export default function Projects({ darkMode, setDarkMode }) {
                 </div>
               </div>
               <div className="flex justify-center mx-4 text-justify md:justify-start md:mx-0">
-                <p className=" text-sm md:text-base pb-6 text-gray-100 dark:text-gray-100">
+                <p className="font-inconstant text-sm md:text-base pb-6 text-gray-100 dark:text-gray-100">
                   Get hourly, daily and current Weather based on your location
                   using the Open-Meteo API
                 </p>

@@ -29,6 +29,7 @@ module.exports = {
       titillium: ["Titillium Web", "sans-serif"],
       thasadith: ["Thasadith", "sans-serif"],
       thasadith_bold: ["Thasadith", "sans-serif"],
+      inconstant: ["inconstant", "sans-serif"],
     },
   },
   plugins: [],
