@@ -94,7 +94,7 @@ export default function Projects({ darkMode, setDarkMode }) {
                 <a href={recipeaseURL} target="_blank" rel="noreferrer">
                   <h3 className=" font-inconstant font-extrabold text-3xl pb-2 mr-4 hover:text-bittersweet text-gray-100 dark:text-delft dark:hover:text-delft">
                     {" "}
-                    Recipeas{" "}
+                    Recipease{" "}
                   </h3>
                 </a>
                 <div className="flex gap-2">

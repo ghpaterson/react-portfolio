@@ -6,6 +6,7 @@ import avatar from "../public/avatar.png";
 import { FaAmbulance } from "react-icons/fa";
 import { MdComputer } from "react-icons/md";
 import { BiFontFamily } from "react-icons/bi";
+import { GoPaintcan } from "react-icons/go";
 
 export default function About({ darkMode, setDarkMode }) {
   return (
@@ -19,7 +20,7 @@ export default function About({ darkMode, setDarkMode }) {
         </Head>
         <main className="dark:bg-about-pattern dark:bg-no-repeat dark:bg-cover dark:bg-fixed">
           <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
-          <section className="h-96 mb-32 md:mb-24 lg:mb-80">
+          <section className="h-96 mb-32 md:mb-24 lg:mb-60">
             <div className="mx-24">
               <div className="min-w-screen h-96 flex justify-start items-center mt-20 rounded-xl dark:bg-transparent md:ml-32 md:mt-24">
                 <div className="text-center p-1">
@@ -35,19 +36,31 @@ export default function About({ darkMode, setDarkMode }) {
               </div>
             </div>
           </section>
-          <section className=" mb-80 lg:mb-60">
-            <div className="  min-w-screen h-96 p-10 gap-28 mt-2 mb-8 rounded-xl dark:bg-transparent md:flex md:justify-center md:items-center">
+          <section className=" mb-80 lg:mb-40">
+            <div className="  min-w-screen h-auto p-10 gap-28 mt-2 mb-8 rounded-xl dark:bg-transparent md:flex md:justify-center md:items-center">
               <div className="flex flex-col justify-center gap-6 mt-10 md:justify-center md:w-96 md:ml-14">
                 <div>
                   <p2 className="font-inconstant text-gray-100 dark:text-gray-100">
                     <MdComputer className="text-3xl text-gray-100" />
                     I’m motivated to work in tech for its potential power to
-                    drive positive change in our world. Having this primary
-                    driver beyond personal or financial gain means I’m motivated
-                    not only to ensure my own work is done well but always
-                    considering the success of the wider project and team as a
-                    whole.
+                    drive positive change in our world. I love how it is
+                    constantly evolving and offering endless opportunities for
+                    learning and growth. In today's world technology plays a
+                    crucial role in shaping the future, and I'm excited to be a
+                    part of it.
                   </p2>
+                </div>
+                <div className="">
+                  <p1 className="font-inconstant text-gray-100 dark:text-gray-100">
+                    <GoPaintcan className="text-3xl" />
+                    I'm always striving to level up my design game, especially
+                    when it comes to UI/UX. My goal is to create designs that
+                    not only look great but are also super user-friendly. To
+                    achieve this, I'm committed to constatly learning and
+                    experimenting with design techniques. I'm also excited to
+                    collaborate with designers to bring out-of-the-box ideas to
+                    life.
+                  </p1>
                 </div>
                 <div className="">
                   <p1 className="font-inconstant text-gray-100 dark:text-gray-100">
