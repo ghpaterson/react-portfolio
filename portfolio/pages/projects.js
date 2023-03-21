@@ -22,7 +22,7 @@ export default function Projects({ darkMode, setDarkMode }) {
   const ecolidayUrl = "https://ecoliday-cxyz.onrender.com/";
   const mineshaftUrl = "https://github.com/ghpaterson/acebook-mineshaft";
   const recipeaseURL = "https://github.com/ghpaterson/recipease";
-  const notflixURL = "https://github.com/ghpaterson/recipease";
+  const notflixURL = "https://github.com/ghpaterson/notflix";
   return (
     <>
       <div className={darkMode ? "dark" : ""}>
