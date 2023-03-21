@@ -22,7 +22,7 @@ export default function NavBar() {
 
   return (
     <nav
-      className={`static py-10 mb-4 flex justify-center md:justify-end md:mr-8 ${
+      className={`static py-10 mb-4 mx-2 flex justify-center md:justify-end md:mr-8 ${
         darkMode ? "dark" : ""
       }`}
     >

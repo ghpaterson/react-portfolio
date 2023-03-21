@@ -36,19 +36,23 @@ export default function About({ darkMode, setDarkMode }) {
               </div>
             </div>
           </section>
-          <section className=" mb-80 lg:mb-40">
-            <div className="  min-w-screen h-auto p-10 gap-28 mt-2 mb-8 rounded-xl dark:bg-transparent lg:flex lg:flex-row">
-              <div className="gap-6 mt-10  lg:w-96 lg:ml-40">
-                <p1 className="font-inconstant text-gray-100 dark:text-gray-100">
-                  <MdComputer className="text-3xl text-gray-100" />
+          <section className=" mb-80 lg:mb-40 ">
+            <div className="flex justify-center lg:flex lg:justify-start lg:mx-64">
+              <div className="h-72 w-96 my-5">
+                <p1 className="font-inconstant text-xl text-gray-100 dark:text-gray-100">
+                  <MdComputer className="text-5xl text-gray-100 my-5" />
                   I’m motivated to work in tech for its potential power to drive
                   positive change in our world. I love how it is constantly
                   evolving and offering endless opportunities for learning and
                   growth. In today's world technology plays a crucial role in
                   shaping the future, and I'm excited to be a part of it.
                 </p1>
-                <p2 className="font-inconstant text-gray-100 dark:text-gray-100">
-                  <GoPaintcan className="text-3xl" />
+              </div>
+            </div>
+            <div className="flex justify-center lg:flex lg:justify-end lg:mx-64">
+              <div className="h-80 w-96 my-14">
+                <p2 className="font-inconstant text-xl text-gray-100 dark:text-gray-100">
+                  <GoPaintcan className="text-5xl my-5" />
                   I'm always striving to level up my design game, especially
                   when it comes to UI/UX. My goal is to create designs that not
                   only look great but are also super user-friendly. To achieve
@@ -56,28 +60,36 @@ export default function About({ darkMode, setDarkMode }) {
                   with design techniques. I'm also excited to collaborate with
                   designers to bring out-of-the-box ideas to life.
                 </p2>
-                <p3 className="font-inconstant text-gray-100 dark:text-gray-100">
-                  <FaAmbulance className="text-3xl" />I have ten years
+              </div>
+            </div>
+            <div className="flex justify-center lg:flex lg:justify-start lg:mx-64">
+              <div className="h-72 w-96 my-5">
+                <p3 className="font-inconstant text-xl text-gray-100 dark:text-gray-100">
+                  <FaAmbulance className="text-5xl my-5" />I have ten years
                   experience working with patients in public healthcare systems
                   I have a passion for providing better services to society and
                   ensuring that everyone from our communities have equal access
                   to things that make their lives healthier and more fulfilling.
                 </p3>
-                <p4 className="font-inconstant text-gray-100 dark:text-gray-100">
-                  <BiFontFamily className="text-3xl" />
+              </div>
+            </div>
+            <div className="flex justify-center lg:flex lg:justify-end lg:mx-64">
+              <div className="h-72 w-96 my-5">
+                <p4 className="font-inconstant text-xl text-gray-100 dark:text-gray-100">
+                  <BiFontFamily className="text-5xl my-5" />
                   The typeface used on this website is called "Inconstant
                   Regular" It was created by Dyslexia Scotland in collaboration
                   with designer Daniel Brokstad to be friendly to both dyslexia
                   and designers alike.
                 </p4>
               </div>
+            </div>
 
-              {/* <div className="bg-transparent rounded-full h-72 w-72 overflow-hidden  dark:bg-transparent hidden md:block">
+            {/* <div className="bg-transparent rounded-full h-72 w-72 overflow-hidden  dark:bg-transparent hidden md:block">
                 <div className="">
                   <Image src={avatar} objectFit="cover" />
                 </div>
               </div> */}
-            </div>
           </section>
           <Footer />
         </main>
