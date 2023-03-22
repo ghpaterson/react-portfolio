@@ -6,6 +6,7 @@ import Ecoliday from "../public/Ecoliday.png";
 import mineshaft from "../public/mineshaft.png";
 import weather from "../public/weather.png";
 import homepage from "../public/homepage.png";
+import notflix from "../public/notflix.png";
 
 import {
   SiMongodb,
@@ -15,12 +16,13 @@ import {
   SiTailwindcss,
   SiJavascript,
   SiHtml5,
-  SiCss3,
+  SiNextdotjs,
 } from "react-icons/si";
 
 export default function Projects({ darkMode, setDarkMode }) {
   const ecolidayUrl = "https://ecoliday-cxyz.onrender.com/";
   const mineshaftUrl = "https://github.com/ghpaterson/acebook-mineshaft";
+  const notflixUrl = "https://github.com/ghpaterson/notflix";
   const recipeaseURL = "https://github.com/ghpaterson/recipease";
   const notflixURL = "https://github.com/ghpaterson/notflix";
   return (
@@ -161,27 +163,29 @@ export default function Projects({ darkMode, setDarkMode }) {
           <div className=" bg-gray-100 bg-opacity-10 dark:bg-opacity-20 rounded-2xl px-4 py-4 flex justify-center mx-5 my-10 lg:mx-32">
             <div className="">
               <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-gray-100 dark:text-gray-100">
-                <a href={notflixURL} target="_blank" rel="noreferrer">
+                <a href={notflixUrl} target="_blank" rel="noreferrer">
                   <h3 className=" font-inconstant font-extrabold text-3xl pb-2 hover:text-bittersweet text-gray-100 dark:text-delft dark:hover:text-delft">
                     {" "}
-                    Weather App{" "}
+                    Notflix{" "}
                   </h3>
                 </a>
                 <div className="flex gap-2">
                   <SiJavascript />
-                  <SiCss3 />
+                  <SiNextdotjs />
+                  <SiTailwindcss />
                   <SiHtml5 />
                 </div>
               </div>
               <div className="flex justify-center mx-4 text-justify md:justify-start md:mx-0">
-                <p className="font-inconstant text-sm md:text-base pb-6 text-gray-100 dark:text-gray-100">
-                  Get hourly, daily and current Weather based on your location
-                  using the Open-Meteo API
+                <p className="font-inconstant text-sm md:text-base pb-6 max-w-3xl text-gray-100 dark:text-gray-100">
+                  This film database was built to familiarise myself with the
+                  latest version of Next.js. See information about the latest
+                  films with courtesy of The Movie DataBase API.
                 </p>
               </div>
               <div className="mx-4 md:mx-0">
                 <Image
-                  src={weather}
+                  src={notflix}
                   width={800}
                   className="rounded-lg shadow-2xl mb-10"
                 />
