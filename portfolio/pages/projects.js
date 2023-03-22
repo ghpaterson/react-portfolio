@@ -4,7 +4,6 @@ import Image from "next/image";
 import Head from "next/head";
 import Ecoliday from "../public/Ecoliday.png";
 import mineshaft from "../public/mineshaft.png";
-import weather from "../public/weather.png";
 import homepage from "../public/homepage.png";
 import notflix from "../public/notflix.png";
 
@@ -24,7 +23,6 @@ export default function Projects({ darkMode, setDarkMode }) {
   const mineshaftUrl = "https://github.com/ghpaterson/acebook-mineshaft";
   const notflixUrl = "https://github.com/ghpaterson/notflix";
   const recipeaseURL = "https://github.com/ghpaterson/recipease";
-  const notflixURL = "https://github.com/ghpaterson/notflix";
   return (
     <>
       <div className={darkMode ? "dark" : ""}>
