@@ -16,6 +16,9 @@ module.exports = {
         delft: "#183059",
         verdigris: "#64b6ac",
         keppel: "#2ebfa5",
+        darkpurple: "#3A3042",
+        lightpurple: "#B892FF",
+        teagreen: "#D5E1A3",
       },
 
       backgroundImage: {
