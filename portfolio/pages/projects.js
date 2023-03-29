@@ -3,9 +3,9 @@ import NavBar from "./navBar";
 import Image from "next/image";
 import Head from "next/head";
 import Ecoliday from "../public/Ecoliday.png";
-import mineshaft from "../public/mineshaft.png";
 import homepage from "../public/homepage.png";
 import notflix from "../public/notflix.png";
+import mrbloggyscreen from "../public/mrbloggyscreen.png";
 
 import {
   SiMongodb,
@@ -16,11 +16,13 @@ import {
   SiJavascript,
   SiHtml5,
   SiNextdotjs,
+  SiFirebase,
+  SiFigma,
 } from "react-icons/si";
 
 export default function Projects({ darkMode, setDarkMode }) {
   const ecolidayUrl = "https://ecoliday-cxyz.onrender.com/";
-  const mineshaftUrl = "https://github.com/ghpaterson/acebook-mineshaft";
+  const bloggyUrl = "https://github.com/ghpaterson/bloggy";
   const notflixUrl = "https://github.com/ghpaterson/notflix";
   const recipeaseURL = "https://github.com/ghpaterson/recipease";
   return (
@@ -91,6 +93,43 @@ export default function Projects({ darkMode, setDarkMode }) {
           <div className="bg-gray-100 bg-opacity-10 dark:bg-opacity-20 rounded-2xl px-4 py-4 flex justify-center mx-5 my-10 lg:mx-32">
             <div>
               <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-gray-100 dark:text-gray-100 ">
+                <a href={bloggyUrl} target="_blank" rel="noreferrer">
+                  <h3 className=" font-inconstant font-extrabold text-3xl pb-2 mr-4 hover:text-bittersweet text-gray-100 dark:text-delft dark:hover:text-delft">
+                    {" "}
+                    Mister Bloggy{" "}
+                  </h3>
+                </a>
+                <div className="flex gap-2">
+                  <SiJavascript />
+                  <SiNextdotjs />
+                  <SiReact />
+                  <SiFirebase />
+                  <SiTailwindcss />
+                  <SiFigma />
+                </div>
+              </div>
+              <div className="flex justify-center mx-4 text-justify md:justify-start md:mx-0">
+                <p className="font-inconstant text-sm md:text-base pb-6 max-w-3xl text-gray-100 dark:text-gray-100">
+                  This project is a blog web app designed for music, food, and
+                  design enthusiasts to share their latest findings with
+                  friends. The app uses Google authentication for user login and
+                  allows users to share posts, comment on posts, delete and edit
+                  their own posts. Built with the Next 13 framework and Firebase
+                  database.
+                </p>
+              </div>
+              <div className="mx-4 md:mx-0">
+                <Image
+                  src={mrbloggyscreen}
+                  width={800}
+                  className="rounded-lg shadow-2xl mb-10"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="bg-gray-100 bg-opacity-10 dark:bg-opacity-20 rounded-2xl px-4 py-4 flex justify-center mx-5 my-10 lg:mx-32">
+            <div>
+              <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-gray-100 dark:text-gray-100 ">
                 <a href={recipeaseURL} target="_blank" rel="noreferrer">
                   <h3 className=" font-inconstant font-extrabold text-3xl pb-2 mr-4 hover:text-bittersweet text-gray-100 dark:text-delft dark:hover:text-delft">
                     {" "}
@@ -124,40 +163,7 @@ export default function Projects({ darkMode, setDarkMode }) {
               </div>
             </div>
           </div>
-          <div className="bg-gray-100 bg-opacity-10 dark:bg-opacity-20 rounded-2xl px-4 py-4 flex justify-center mx-5 my-10 lg:mx-32">
-            <div>
-              <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-gray-100 dark:text-gray-100 ">
-                <a href={mineshaftUrl} target="_blank" rel="noreferrer">
-                  <h3 className=" font-inconstant font-extrabold text-3xl pb-2 mr-4 hover:text-bittersweet text-gray-100 dark:text-delft dark:hover:text-delft">
-                    {" "}
-                    Mineshaft{" "}
-                  </h3>
-                </a>
-                <div className="flex gap-2">
-                  <SiJavascript />
-                  <SiMongodb />
-                  <SiExpress />
-                  <SiReact />
-                  <SiNodedotjs />
-                  <SiTailwindcss />
-                </div>
-              </div>
-              <div className="flex justify-center mx-4 text-justify md:justify-start md:mx-0">
-                <p className="font-inconstant text-sm md:text-base pb-6 max-w-3xl text-gray-100 dark:text-gray-100">
-                  Facebook clone using the MERN stack. Allowing users to create
-                  an account and login. Users can write and like posts as well
-                  as comment.
-                </p>
-              </div>
-              <div className="mx-4 md:mx-0">
-                <Image
-                  src={mineshaft}
-                  width={800}
-                  className="rounded-lg shadow-2xl mb-10"
-                />
-              </div>
-            </div>
-          </div>
+
           <div className=" bg-gray-100 bg-opacity-10 dark:bg-opacity-20 rounded-2xl px-4 py-4 flex justify-center mx-5 my-10 lg:mx-32">
             <div className="">
               <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-gray-100 dark:text-gray-100">
