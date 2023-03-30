@@ -13,18 +13,10 @@ export default function Body({ darkMode }) {
       <div className={darkMode ? "dark" : ""}>
         <div className="flex flex-col justify-center items-center my-20 lg:flex-row">
           <div>
-            {darkMode ? (
-              <Image src={titledark} width={400} key={"titledark"} />
-            ) : (
-              <Image src={titlelight} width={400} key={"titlelight"} />
-            )}
+            <Image src={darkMode ? titledark : titlelight} width={400} />
           </div>
           <div>
-            {darkMode ? (
-              <Image src={darkhero} width={500} key={"darkhero"} />
-            ) : (
-              <Image src={lighthero} width={500} key={"lighthero"} />
-            )}
+            <Image src={darkMode ? darkhero : lighthero} width={500} />
           </div>
         </div>
       </div>

@@ -7,6 +7,7 @@ import { FaAmbulance } from "react-icons/fa";
 import { MdComputer } from "react-icons/md";
 import { BiFontFamily } from "react-icons/bi";
 import { GoPaintcan } from "react-icons/go";
+import coffeelight from "../public/light/Coffeelight.png";
 
 export default function About({ darkMode, setDarkMode }) {
   return (
@@ -22,25 +23,28 @@ export default function About({ darkMode, setDarkMode }) {
           <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
           <section className="h-96 mb-32 md:mb-24 lg:mb-60">
             <div className="mx-24">
-              <div className="min-w-screen h-96 flex justify-start items-center mt-20 rounded-xl dark:bg-transparent md:ml-32 md:mt-24">
+              <div className="min-w-screen h-96 flex flex-col items-center mt-20 rounded-xl dark:bg-transparent md:flex-row md:gap-4 md:ml-32 md:mt-24">
                 <div className="text-center p-1">
                   <h2 className="font-inconstant  text-4xl py-2 text-darkpurple font-extrabold md:text-5xl  dark:text-lightpurple">
                     About
                   </h2>
                   <h3 className="text-2xl py-2 text-darkpurple md:text-3xl dark:text-gray-100"></h3>
-                  <p className=" font-inconstant text-md py-5 leading-8 text-darkpurple md:text-xl max-w-lg mx-auto dark:text-gray-100">
-                    Open your knowledge basket! Scroll down to learn a little
-                    bit about me and my Portfolio.
+                  <p className=" font-inconstant text-md py-5 leading-8 text-darkpurple md:text-xl max-w-md mx-auto dark:text-gray-100">
+                    I'm a Junior FullStack Software Developer and Makers Academy
+                    Graduate. Scroll down to find out a bit more about me.
                   </p>
+                </div>
+                <div className="ml-6">
+                  <Image src={coffeelight} width={500} />
                 </div>
               </div>
             </div>
           </section>
-          <section className=" mb-80 lg:mb-40 ">
+          <section className=" mb-80 lg:mb-40">
             <div className="flex justify-center lg:flex lg:justify-start lg:mx-64">
-              <div className="h-72 w-96 my-5">
+              <div className="h-72 w-96">
                 <p1 className="font-inconstant text-xl text-darkpurple dark:text-gray-100">
-                  <MdComputer className="text-5xl text-darkpurple my-5" />
+                  <MdComputer className="text-5xl  my-5" />
                   I’m motivated to work in tech for its potential power to drive
                   positive change in our world. I love how it is constantly
                   evolving and offering endless opportunities for learning and
@@ -50,7 +54,7 @@ export default function About({ darkMode, setDarkMode }) {
               </div>
             </div>
             <div className="flex justify-center lg:flex lg:justify-end lg:mx-64">
-              <div className="h-80 w-96 my-14">
+              <div className="h-80 w-96">
                 <p2 className="font-inconstant text-xl text-darkpurple dark:text-gray-100">
                   <GoPaintcan className="text-5xl my-5" />
                   I'm always striving to level up my design game, especially
@@ -63,7 +67,7 @@ export default function About({ darkMode, setDarkMode }) {
               </div>
             </div>
             <div className="flex justify-center lg:flex lg:justify-start lg:mx-64">
-              <div className="h-72 w-96 my-5">
+              <div className="h-72 w-96">
                 <p3 className="font-inconstant text-xl text-darkpurple dark:text-gray-100">
                   <FaAmbulance className="text-5xl my-5" />I have ten years
                   experience working with patients in public healthcare systems
@@ -74,7 +78,7 @@ export default function About({ darkMode, setDarkMode }) {
               </div>
             </div>
             <div className="flex justify-center lg:flex lg:justify-end lg:mx-64">
-              <div className="h-72 w-96 my-5">
+              <div className="h-72 w-96">
                 <p4 className="font-inconstant text-xl text-darkpurple dark:text-gray-100">
                   <BiFontFamily className="text-5xl my-5" />
                   The typeface used on this website is called "Inconstant
