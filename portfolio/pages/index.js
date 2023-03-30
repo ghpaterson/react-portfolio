@@ -13,7 +13,7 @@ export default function Home({ darkMode, setDarkMode }) {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <main className=" dark:bg-gray-100 dark:bg-no-repeat dark:bg-cover dark:bg-fixed">
+        <main className=" dark:bg-darkpurple dark:bg-no-repeat dark:bg-cover dark:bg-fixed">
           <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
           <Body />
           <Footer />

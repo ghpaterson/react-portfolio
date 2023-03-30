@@ -18,17 +18,17 @@ export default function About({ darkMode, setDarkMode }) {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <main className="dark:bg-about-pattern dark:bg-no-repeat dark:bg-cover dark:bg-fixed">
+        <main className="dark:bg-darkpurple dark:bg-no-repeat dark:bg-cover dark:bg-fixed">
           <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
           <section className="h-96 mb-32 md:mb-24 lg:mb-60">
             <div className="mx-24">
               <div className="min-w-screen h-96 flex justify-start items-center mt-20 rounded-xl dark:bg-transparent md:ml-32 md:mt-24">
                 <div className="text-center p-1">
-                  <h2 className="font-inconstant  text-4xl py-2 text-bittersweet font-extrabold md:text-5xl  dark:text-delft">
+                  <h2 className="font-inconstant  text-4xl py-2 text-darkpurple font-extrabold md:text-5xl  dark:text-lightpurple">
                     About
                   </h2>
-                  <h3 className="text-2xl py-2 text-gray-100 md:text-3xl dark:text-gray-100"></h3>
-                  <p className=" font-inconstant text-md py-5 leading-8 text-gray-100 md:text-xl max-w-lg mx-auto dark:text-gray-100">
+                  <h3 className="text-2xl py-2 text-darkpurple md:text-3xl dark:text-gray-100"></h3>
+                  <p className=" font-inconstant text-md py-5 leading-8 text-darkpurple md:text-xl max-w-lg mx-auto dark:text-gray-100">
                     Open your knowledge basket! Scroll down to learn a little
                     bit about me and my Portfolio.
                   </p>
@@ -39,8 +39,8 @@ export default function About({ darkMode, setDarkMode }) {
           <section className=" mb-80 lg:mb-40 ">
             <div className="flex justify-center lg:flex lg:justify-start lg:mx-64">
               <div className="h-72 w-96 my-5">
-                <p1 className="font-inconstant text-xl text-gray-100 dark:text-gray-100">
-                  <MdComputer className="text-5xl text-gray-100 my-5" />
+                <p1 className="font-inconstant text-xl text-darkpurple dark:text-gray-100">
+                  <MdComputer className="text-5xl text-darkpurple my-5" />
                   I’m motivated to work in tech for its potential power to drive
                   positive change in our world. I love how it is constantly
                   evolving and offering endless opportunities for learning and
@@ -51,7 +51,7 @@ export default function About({ darkMode, setDarkMode }) {
             </div>
             <div className="flex justify-center lg:flex lg:justify-end lg:mx-64">
               <div className="h-80 w-96 my-14">
-                <p2 className="font-inconstant text-xl text-gray-100 dark:text-gray-100">
+                <p2 className="font-inconstant text-xl text-darkpurple dark:text-gray-100">
                   <GoPaintcan className="text-5xl my-5" />
                   I'm always striving to level up my design game, especially
                   when it comes to UI/UX. My goal is to create designs that not
@@ -64,7 +64,7 @@ export default function About({ darkMode, setDarkMode }) {
             </div>
             <div className="flex justify-center lg:flex lg:justify-start lg:mx-64">
               <div className="h-72 w-96 my-5">
-                <p3 className="font-inconstant text-xl text-gray-100 dark:text-gray-100">
+                <p3 className="font-inconstant text-xl text-darkpurple dark:text-gray-100">
                   <FaAmbulance className="text-5xl my-5" />I have ten years
                   experience working with patients in public healthcare systems
                   I have a passion for providing better services to society and
@@ -75,7 +75,7 @@ export default function About({ darkMode, setDarkMode }) {
             </div>
             <div className="flex justify-center lg:flex lg:justify-end lg:mx-64">
               <div className="h-72 w-96 my-5">
-                <p4 className="font-inconstant text-xl text-gray-100 dark:text-gray-100">
+                <p4 className="font-inconstant text-xl text-darkpurple dark:text-gray-100">
                   <BiFontFamily className="text-5xl my-5" />
                   The typeface used on this website is called "Inconstant
                   Regular" It was created by Dyslexia Scotland in collaboration

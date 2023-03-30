@@ -29,8 +29,8 @@ export default function NavBar() {
       <ul className="flex gap-0">
         <li>
           <a
-            className={`font-inconstant font-bold text-lightpurple hover:text-teagreen ${
-              darkMode ? "dark:text-darkpurple" : ""
+            className={`font-inconstant font-bold text-darkpurple  ${
+              darkMode ? "dark:text-lightpurple" : ""
             } px-2 py-1 border-none rounded-md ml-2 mr-2`}
             href="/"
             target=""
@@ -40,8 +40,8 @@ export default function NavBar() {
         </li>
         <li>
           <a
-            className={`font-inconstant font-bold text-lightpurple hover:text-teagreen ${
-              darkMode ? "dark:text-darkpurple" : ""
+            className={`font-inconstant font-bold text-darkpurple  ${
+              darkMode ? "dark:text-lightpurple" : ""
             } px-2 py-2 border-none rounded-md ml-1 mr-1`}
             href="/about"
             target=""
@@ -51,8 +51,8 @@ export default function NavBar() {
         </li>
         <li>
           <a
-            className={`font-inconstant font-bold text-lightpurple hover:text-teagreen ${
-              darkMode ? "dark:text-darkpurple" : ""
+            className={`font-inconstant font-bold text-darkpurple ${
+              darkMode ? "dark:text-lightpurple" : ""
             } px-2 py-2 border-none rounded-md ml-1 mr-1`}
             href="/projects"
             target=""
@@ -62,8 +62,8 @@ export default function NavBar() {
         </li>
         <li>
           <a
-            className={`font-inconstant font-bold text-lightpurple hover:text-teagreen ${
-              darkMode ? "dark:text-darkpurple" : ""
+            className={`font-inconstant font-bold text-darkpurple  ${
+              darkMode ? "dark:text-lightpurple" : ""
             } px-4 py-2 border-none rounded-md ml-1 mr-1`}
             href="/graeme-cv.pdf"
             target="_blank"
@@ -73,14 +73,14 @@ export default function NavBar() {
         </li>
         <li>
           {darkMode ? (
-            <BsFillMoonFill
-              onClick={() => setDarkMode(!darkMode)}
-              className="cursor-pointer text-2xl ml-4 text-lightpurple hover:text-yellow-500 dark:text-darkpurple dark:hover:text-lightpurple md:ml-32 md:mr-4"
-            />
-          ) : (
             <BsFillSunFill
               onClick={() => setDarkMode(!darkMode)}
-              className="cursor-pointer text-2xl ml-4 text-lightpurple hover:text-yellow-500 dark:text-yellow-500 md:ml-32 md:mr-4"
+              className="cursor-pointer text-2xl ml-4  dark:text-lightpurple dark:hover:text-yellow-500 md:ml-32 md:mr-4"
+            />
+          ) : (
+            <BsFillMoonFill
+              onClick={() => setDarkMode(!darkMode)}
+              className="cursor-pointer text-2xl ml-4 text-darkpurple hover:text-lightpurple dark:text-yellow-500 md:ml-32 md:mr-4"
             />
           )}
         </li>
