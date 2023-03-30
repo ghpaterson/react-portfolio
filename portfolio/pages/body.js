@@ -1,47 +1,32 @@
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import Image from "next/image";
+import titlelight2 from "../public/light/titlelight2.png";
+import lighthero from "../public/light/lighthero.png";
 
 export default function Body({ darkMode }) {
-  const gitHubUrl = "https://github.com/ghpaterson";
-  const linkedInUrl = "https://www.linkedin.com/in/graeme-paterson-25b096268/";
   return (
     <>
       <div className={darkMode ? "dark" : ""}>
-        <section className="min-h-screen">
-          <div className=" mx-24">
-            <div className=" min-w-screen h-96 flex justify-center md:justify-start md:ml-32 gap-20 items-center mt-24 rounded-xl dark:bg-transparent">
-              <div className="text-center p-1">
-                <h2 className=" font-inconstant font-extrabold text-5xl py-2 text-bittersweet md:text-5xl sm:text-4xl dark:text-delft">
-                  Hi, I'm Graeme.
-                </h2>
-                <h3 className=" font-inconstant text-2xl py-2 text-gray-100 md:text-3xl dark:text-gray-100">
-                  Software Developer
-                </h3>
-                <p className=" font-inconstant text-md py-5 leading-8 text-gray-100 md:text-xl max-w-lg mx-auto dark:text-gray-100">
-                  Junior Full-Stack software developer with a focus on Frontend
-                  development. Makers Academy graduate
-                </p>
-                <div className="text-3xl flex justify-center gap-16 py-2 text-gray-100 cursor-pointer dark:text-gray-100">
-                  <a
-                    className="hover:text-bittersweet dark:hover:text-delft"
-                    href={linkedInUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <AiFillLinkedin />
-                  </a>
-                  <a
-                    className="hover:text-bittersweet dark:hover:text-delft"
-                    href={gitHubUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <AiFillGithub />
-                  </a>
-                </div>
-              </div>
-            </div>
+        <div className="flex flex-col justify-center items-center my-20 lg:flex-row">
+          <div>
+            <Image
+              id="title-image"
+              src={titlelight2}
+              width={400}
+              alt="title"
+              priority
+            />
           </div>
-        </section>
+
+          <div>
+            <Image
+              id="hero-image"
+              src={lighthero}
+              width={500}
+              alt="hero"
+              priority
+            />
+          </div>
+        </div>
       </div>
     </>
   );
