@@ -22,7 +22,7 @@ export default function NavBar() {
 
   return (
     <nav
-      className={`static py-10 mb-4 mx-2 flex justify-center md:justify-end md:mr-8 ${
+      className={`static py-10 mb-4 mx-2 flex justify-center md:justify-end md:mr-60 ${
         darkMode ? "dark" : ""
       }`}
     >
@@ -71,7 +71,7 @@ export default function NavBar() {
             CV
           </a>
         </li>
-        <li>
+        {/* <li>
           {darkMode ? (
             <BsFillSunFill
               onClick={() => setDarkMode(!darkMode)}
@@ -83,7 +83,7 @@ export default function NavBar() {
               className="cursor-pointer text-2xl ml-4 text-darkpurple hover:text-lightpurple dark:text-yellow-500 md:ml-32 md:mr-4"
             />
           )}
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

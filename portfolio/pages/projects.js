@@ -36,18 +36,17 @@ export default function Projects({ darkMode, setDarkMode }) {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <main className="bg-teagreen dark:bg-darkpurple">
+        <main className="bg-teagreen ">
           <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
           <section className="h-96 mb-32 md:mb-44 lg:mb-66">
             <div className="mx-24">
               <div className="min-w-screen h-96 flex flex-col items-center mt-20 rounded-xl md:flex-row md:gap-6  md:ml-32 md:mt-24">
                 <div className="text-center p-1">
-                  {/* <h2 className="font-moonie text-4xl py-2 text-darkpurple font-extrabold md:text-7xl  dark:text-lightpurple">
-                    Projects
-                  </h2> */}
-                  <Image className="ml-24" src={projects} width={240} />
-                  <h3 className="text-2xl py-2 text-darkpurple md:text-3xl dark:text-gray-100"></h3>
-                  <p className=" font-inconstant text-md py-5 leading-8 text-darkpurple md:text-xl max-w-md mx-auto dark:text-gray-100">
+                  <div className="flex justify-center">
+                    <Image src={projects} width={240} />
+                  </div>
+                  <h3 className="text-2xl py-2 text-darkpurple md:text-3xl "></h3>
+                  <p className=" font-inconstant text-md py-5 leading-8 text-darkpurple md:text-xl max-w-md mx-auto ">
                     Welcome to my projects page! Here you'll find a collection
                     of my latest work, showcasing my skills in Software
                     Development, design, and more.
@@ -62,9 +61,9 @@ export default function Projects({ darkMode, setDarkMode }) {
           <section className="bg-darkpurple py-6">
             <div className="bg-transparent flex justify-center mx-5 lg:mx-32">
               <div>
-                <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start text-3xl text-bone  ">
+                <div className="flex flex-col justify-center mb-4 items-center md:flex md:items-center md:justify-start text-3xl text-bone  ">
                   <a href={ecolidayUrl} target="_blank" rel="noreferrer">
-                    <h3 className=" font-inconstant font-extrabold text-3xl pb-2 mr-4 text-bone dark:text-lightpurple dark:hover:text-teagreen">
+                    <h3 className=" font-inconstant font-extrabold text-3xl pb-4 mr-4 text-bone ">
                       {" "}
                       Ecoliday{" "}
                     </h3>
@@ -79,7 +78,7 @@ export default function Projects({ darkMode, setDarkMode }) {
                   </div>
                 </div>
                 <div className="flex justify-center mx-4 text-justify md:justify-start md:mx-0">
-                  <p className="font-inconstant text-sm pb-6 max-w-3xl text-bone dark:text-gray-100 md:text-base">
+                  <p className="font-inconstant text-sm pb-6 max-w-3xl text-bone  md:text-base">
                     Ecoliday has been developed to enable people to make a more
                     environmentally informed decision when planning a holiday.
                     It provides users with estimated CO2e emissions for
@@ -100,9 +99,9 @@ export default function Projects({ darkMode, setDarkMode }) {
           <section className="bg-bone py-6">
             <div className="bg-transparent flex justify-center mx-5 lg:mx-32">
               <div>
-                <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-darkpurple dark:text-gray-100 ">
+                <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl ">
                   <a href={bloggyUrl} target="_blank" rel="noreferrer">
-                    <h3 className=" font-inconstant font-extrabold text-3xl pb-2 mr-4  text-darkpurple dark:text-lightpurple dark:hover:text-teagreen">
+                    <h3 className=" font-inconstant font-extrabold text-3xl pb-2 mr-4  text-darkpurple ">
                       {" "}
                       Mister Bloggy{" "}
                     </h3>
@@ -117,7 +116,7 @@ export default function Projects({ darkMode, setDarkMode }) {
                   </div>
                 </div>
                 <div className="flex justify-center mx-4 text-justify md:justify-start md:mx-0">
-                  <p className="font-inconstant text-sm md:text-base pb-6 max-w-3xl text-darkpurple dark:text-gray-100">
+                  <p className="font-inconstant text-sm md:text-base pb-6 max-w-3xl text-darkpurple ">
                     This project is a blog web app designed for music, food, and
                     design enthusiasts to share their latest findings with
                     friends. The app uses Google authentication for user login
@@ -139,9 +138,9 @@ export default function Projects({ darkMode, setDarkMode }) {
           <section className="bg-darkpurple py-6">
             <div className="bg-transparent  flex justify-center mx-5 lg:mx-32">
               <div>
-                <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-bone dark:text-gray-100 ">
+                <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-bone  ">
                   <a href={recipeaseURL} target="_blank" rel="noreferrer">
-                    <h3 className=" font-inconstant font-extrabold text-3xl pb-2 mr-4 text-bone dark:text-lightpurple dark:hover:text-teagreen">
+                    <h3 className=" font-inconstant font-extrabold text-3xl pb-2 mr-4 text-bone ">
                       {" "}
                       Recipease{" "}
                     </h3>
@@ -153,7 +152,7 @@ export default function Projects({ darkMode, setDarkMode }) {
                   </div>
                 </div>
                 <div className="flex justify-center mx-4 text-justify md:justify-start md:mx-0">
-                  <p className="font-inconstant text-sm md:text-base pb-6 max-w-3xl text-bone dark:text-gray-100">
+                  <p className="font-inconstant text-sm md:text-base pb-6 max-w-3xl text-bone ">
                     Explore a vast collection of delicious recipes with this
                     food recipe library! The web-app allows users to browse
                     recipes by category or search for specific ingredients,
@@ -177,9 +176,9 @@ export default function Projects({ darkMode, setDarkMode }) {
           <section className="bg-bone">
             <div className=" bg-transparent px-4 py-6 flex justify-center mx-5 lg:mx-32">
               <div className="">
-                <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-darkpurple dark:text-gray-100">
+                <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-darkpurple ">
                   <a href={notflixUrl} target="_blank" rel="noreferrer">
-                    <h3 className=" font-inconstant font-extrabold text-3xl pb-2 text-darkpurple dark:text-lightpurple dark:hover:text-teagreen">
+                    <h3 className=" font-inconstant font-extrabold text-3xl pb-2 text-darkpurple ">
                       {" "}
                       Notflix{" "}
                     </h3>
@@ -192,7 +191,7 @@ export default function Projects({ darkMode, setDarkMode }) {
                   </div>
                 </div>
                 <div className="flex justify-center mx-4 text-justify md:justify-start md:mx-0">
-                  <p className="font-inconstant text-sm md:text-base pb-6 max-w-3xl text-darkpurple dark:text-gray-100">
+                  <p className="font-inconstant text-sm md:text-base pb-6 max-w-3xl text-darkpurple ">
                     This film database was built to familiarise myself with the
                     latest version of Next.js. See information about the latest
                     films with courtesy of The Movie DataBase API.
