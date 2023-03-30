@@ -6,6 +6,7 @@ import Ecoliday from "../public/Ecoliday.png";
 import homepage from "../public/homepage.png";
 import notflix from "../public/notflix.png";
 import mrbloggyscreen from "../public/mrbloggyscreen.png";
+import messylight from "../public/light/Messylight.png";
 
 import {
   SiMongodb,
@@ -38,17 +39,20 @@ export default function Projects({ darkMode, setDarkMode }) {
           <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
           <section className="h-96 mb-32 md:mb-44 lg:mb-66">
             <div className="mx-24">
-              <div className="min-w-screen h-96 flex justify-start items-center mt-20 rounded-xl dark:bg-transparent md:ml-32 md:mt-24">
+              <div className="min-w-screen h-96 flex flex-col items-center mt-20 rounded-xl md:flex-row md:gap-6 dark:bg-transparent md:ml-32 md:mt-24">
                 <div className="text-center p-1">
                   <h2 className="font-inconstant text-4xl py-2 text-darkpurple font-extrabold md:text-5xl  dark:text-lightpurple">
                     Projects
                   </h2>
                   <h3 className="text-2xl py-2 text-darkpurple md:text-3xl dark:text-gray-100"></h3>
-                  <p className=" font-inconstant text-md py-5 leading-8 text-darkpurple md:text-xl max-w-lg mx-auto dark:text-gray-100">
+                  <p className=" font-inconstant text-md py-5 leading-8 text-darkpurple md:text-xl max-w-md mx-auto dark:text-gray-100">
                     Welcome to my projects page! Here you'll find a collection
                     of my latest work, showcasing my skills in Software
                     Development, design, and more.
                   </p>
+                </div>
+                <div className="mb-10 md:mt-10">
+                  <Image src={messylight} width={500} />
                 </div>
               </div>
             </div>
