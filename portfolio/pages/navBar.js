@@ -37,7 +37,7 @@ export default function NavBar() {
         <li>
           <a
             className={`font-inconstant font-bold text-darkpurple  ${
-              darkMode ? "dark:text-lightpurple" : ""
+              darkMode ? "dark:text-darkpurple" : ""
             } px-2 py-1 border-none rounded-md ml-2 mr-2`}
             href="/"
             target=""
@@ -48,7 +48,7 @@ export default function NavBar() {
         <li>
           <a
             className={`font-inconstant font-bold text-darkpurple  ${
-              darkMode ? "dark:text-lightpurple" : ""
+              darkMode ? "dark:text-darkpurple" : ""
             } px-2 py-2 border-none rounded-md ml-1 mr-1`}
             href="/about"
             target=""
@@ -59,7 +59,7 @@ export default function NavBar() {
         <li>
           <a
             className={`font-inconstant font-bold text-darkpurple ${
-              darkMode ? "dark:text-lightpurple" : ""
+              darkMode ? "dark:text-darkpurple" : ""
             } px-2 py-2 border-none rounded-md ml-1 mr-1`}
             href="/projects"
             target=""
@@ -70,7 +70,7 @@ export default function NavBar() {
         <li>
           <a
             className={`font-inconstant font-bold text-darkpurple  ${
-              darkMode ? "dark:text-lightpurple" : ""
+              darkMode ? "dark:text-darkpurple" : ""
             } px-4 py-2 border-none rounded-md ml-1 mr-1`}
             href="/graeme-cv.pdf"
             target="_blank"
