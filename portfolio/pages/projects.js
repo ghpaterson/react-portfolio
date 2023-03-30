@@ -5,7 +5,7 @@ import Head from "next/head";
 import Ecoliday from "../public/Ecoliday.png";
 import homepage from "../public/homepage.png";
 import notflix from "../public/notflix.png";
-import mrbloggyscreen from "../public/mrbloggyscreen.png";
+import bloggyscreen from "../public/bloggyscreen.png";
 import messylavender from "../public/light/Messylavender.png";
 import projects from "../public/light/Projects.png";
 
@@ -127,7 +127,7 @@ export default function Projects({ darkMode, setDarkMode }) {
                 </div>
                 <div className="mx-4 md:mx-0">
                   <Image
-                    src={mrbloggyscreen}
+                    src={bloggyscreen}
                     width={800}
                     className="rounded-lg shadow-2xl mb-10"
                   />
