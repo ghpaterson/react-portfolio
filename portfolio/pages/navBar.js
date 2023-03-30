@@ -1,8 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
+import {
+  BsFillSunFill,
+  BsFillMoonFill,
+  BsGithub,
+  BsLinkedin,
+} from "react-icons/bs";
 
 export default function NavBar() {
   const [darkMode, setDarkMode] = useState(false);
+  const githubURL = "https://github.com/ghpaterson";
+  const linkedinURL = "https://www.linkedin.com/in/graeme-paterson-25b096268/";
 
   useEffect(() => {
     const storedDarkMode = localStorage.getItem("darkMode");
@@ -22,7 +29,7 @@ export default function NavBar() {
 
   return (
     <nav
-      className={`static py-10 mb-4 mx-2 flex justify-center md:justify-end md:mr-60 ${
+      className={`static py-10 mb-4 mx-2 flex justify-center md:justify-end md:items-center md:mr-20 md:gap-10 ${
         darkMode ? "dark" : ""
       }`}
     >
@@ -71,6 +78,18 @@ export default function NavBar() {
             CV
           </a>
         </li>
+        <div className="hidden md:flex gap-8 items-center px-6 md:ml-24">
+          <li>
+            <a href={linkedinURL} target="_blank">
+              <BsLinkedin className="cursor-pointer text-xl text-darkpurple" />
+            </a>
+          </li>
+          <li>
+            <a href={githubURL} target="_blank">
+              <BsGithub className="cursor-pointer text-xl text-darkpurple" />
+            </a>
+          </li>
+        </div>
         {/* <li>
           {darkMode ? (
             <BsFillSunFill
