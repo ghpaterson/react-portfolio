@@ -1,10 +1,12 @@
 export default function Footer() {
   return (
     <>
-      <div>
-        <h1 className="  font-inconstant text-gray-100 ml-5 pb-10 dark:text-gray-100">
-          Developed by Graeme Paterson
-        </h1>
+      <div className="bg-bone">
+        <div>
+          <h1 className="  text-darkpurple font-inconstant pl-6 pb-10 ">
+            Developed by Graeme Paterson
+          </h1>
+        </div>
       </div>
     </>
   );

@@ -11,6 +11,10 @@
   font-family: "inconstant";
   src: url("/fonts/InconstantVF.ttf") format("truetype");
 }
+@font-face {
+  font-family: "moonie";
+  src: url("/fonts/MoonieEyesRegular.ttf") format("truetype");
+}
 
 :root {
   --max-width: 1100px;

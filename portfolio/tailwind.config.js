@@ -8,17 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        bittersweet: "#E87461",
-        airblue: "#6d9dc5",
-        lazuli: "#33658A",
-        moonstone: "#7FB7BE",
-        africanViolet: "#b288c0",
-        delft: "#183059",
-        verdigris: "#64b6ac",
-        keppel: "#2ebfa5",
         darkpurple: "#3A3042",
         lightpurple: "#B892FF",
         teagreen: "#D5E1A3",
+        bone: "#f5f5fa",
       },
 
       backgroundImage: {
@@ -33,6 +26,7 @@ module.exports = {
       thasadith: ["Thasadith", "sans-serif"],
       thasadith_bold: ["Thasadith", "sans-serif"],
       inconstant: ["inconstant", "sans-serif"],
+      moonie: ["moonie", "sans-serif"],
     },
   },
   plugins: [],

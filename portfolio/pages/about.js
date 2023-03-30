@@ -8,6 +8,7 @@ import { MdComputer } from "react-icons/md";
 import { BiFontFamily } from "react-icons/bi";
 import { GoPaintcan } from "react-icons/go";
 import coffeelight from "../public/light/Coffeelight.png";
+import about from "../public/light/About.png";
 
 export default function About({ darkMode, setDarkMode }) {
   return (
@@ -19,22 +20,24 @@ export default function About({ darkMode, setDarkMode }) {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <main className="dark:bg-darkpurple dark:bg-no-repeat dark:bg-cover dark:bg-fixed">
+        <main className="bg-lightpurple dark:bg-darkpurple dark:bg-no-repeat dark:bg-cover dark:bg-fixed">
           <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
           <section className="h-96 mb-32 md:mb-24 lg:mb-60">
             <div className="mx-24">
               <div className="min-w-screen h-96 flex flex-col items-center mt-20 rounded-xl dark:bg-transparent md:flex-row md:gap-4 md:ml-32 md:mt-24">
                 <div className="text-center p-1">
-                  <h2 className="font-inconstant  text-4xl py-2 text-darkpurple font-extrabold md:text-5xl  dark:text-lightpurple">
+                  {/* <h2 className="font-moonie text-4xl py-2 text-darkpurple font-extrabold md:text-7xl  dark:text-lightpurple">
                     About
-                  </h2>
+                  </h2> */}
+                  <Image className="ml-28" src={about} width={200} />
+
                   <h3 className="text-2xl py-2 text-darkpurple md:text-3xl dark:text-gray-100"></h3>
                   <p className=" font-inconstant text-md py-5 leading-8 text-darkpurple md:text-xl max-w-md mx-auto dark:text-gray-100">
                     I'm a Junior FullStack Software Developer and Makers Academy
                     Graduate. Scroll down to find out a bit more about me.
                   </p>
                 </div>
-                <div className="ml-6">
+                <div className="ml-6 md:mt-12">
                   <Image src={coffeelight} width={500} />
                 </div>
               </div>
@@ -54,7 +57,7 @@ export default function About({ darkMode, setDarkMode }) {
               </div>
             </div>
             <div className="flex justify-center lg:flex lg:justify-end lg:mx-64">
-              <div className="h-80 w-96">
+              <div className="h-80 w-96 my-8 md:my-0">
                 <p2 className="font-inconstant text-xl text-darkpurple dark:text-gray-100">
                   <GoPaintcan className="text-5xl my-5" />
                   I'm always striving to level up my design game, especially
@@ -67,7 +70,7 @@ export default function About({ darkMode, setDarkMode }) {
               </div>
             </div>
             <div className="flex justify-center lg:flex lg:justify-start lg:mx-64">
-              <div className="h-72 w-96">
+              <div className="h-72 w-96 my-2 md:my-0">
                 <p3 className="font-inconstant text-xl text-darkpurple dark:text-gray-100">
                   <FaAmbulance className="text-5xl my-5" />I have ten years
                   experience working with patients in public healthcare systems
@@ -78,7 +81,7 @@ export default function About({ darkMode, setDarkMode }) {
               </div>
             </div>
             <div className="flex justify-center lg:flex lg:justify-end lg:mx-64">
-              <div className="h-72 w-96">
+              <div className="h-72 w-96 md:my-0">
                 <p4 className="font-inconstant text-xl text-darkpurple dark:text-gray-100">
                   <BiFontFamily className="text-5xl my-5" />
                   The typeface used on this website is called "Inconstant

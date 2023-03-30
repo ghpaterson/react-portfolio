@@ -6,7 +6,8 @@ import Ecoliday from "../public/Ecoliday.png";
 import homepage from "../public/homepage.png";
 import notflix from "../public/notflix.png";
 import mrbloggyscreen from "../public/mrbloggyscreen.png";
-import messylight from "../public/light/Messylight.png";
+import messylavender from "../public/light/Messylavender.png";
+import projects from "../public/light/Projects.png";
 
 import {
   SiMongodb,
@@ -35,15 +36,16 @@ export default function Projects({ darkMode, setDarkMode }) {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <main className=" dark:bg-darkpurple">
+        <main className="bg-teagreen dark:bg-darkpurple">
           <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
           <section className="h-96 mb-32 md:mb-44 lg:mb-66">
             <div className="mx-24">
-              <div className="min-w-screen h-96 flex flex-col items-center mt-20 rounded-xl md:flex-row md:gap-6 dark:bg-transparent md:ml-32 md:mt-24">
+              <div className="min-w-screen h-96 flex flex-col items-center mt-20 rounded-xl md:flex-row md:gap-6  md:ml-32 md:mt-24">
                 <div className="text-center p-1">
-                  <h2 className="font-inconstant text-4xl py-2 text-darkpurple font-extrabold md:text-5xl  dark:text-lightpurple">
+                  {/* <h2 className="font-moonie text-4xl py-2 text-darkpurple font-extrabold md:text-7xl  dark:text-lightpurple">
                     Projects
-                  </h2>
+                  </h2> */}
+                  <Image className="ml-24" src={projects} width={240} />
                   <h3 className="text-2xl py-2 text-darkpurple md:text-3xl dark:text-gray-100"></h3>
                   <p className=" font-inconstant text-md py-5 leading-8 text-darkpurple md:text-xl max-w-md mx-auto dark:text-gray-100">
                     Welcome to my projects page! Here you'll find a collection
@@ -52,154 +54,160 @@ export default function Projects({ darkMode, setDarkMode }) {
                   </p>
                 </div>
                 <div className="mb-10 md:mt-10">
-                  <Image src={messylight} width={500} />
+                  <Image src={messylavender} width={500} />
                 </div>
               </div>
             </div>
           </section>
-
-          <div className="bg-gray-100 bg-opacity-10 dark:bg-opacity-10 rounded-2xl px-4 py-4 flex justify-center mx-5 my-10 lg:mx-32">
-            <div>
-              <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-3xl text-darkpurple dark:text-gray-100 ">
-                <a href={ecolidayUrl} target="_blank" rel="noreferrer">
-                  <h3 className=" font-inconstant font-extrabold text-3xl pb-2 mr-4 text-darkpurple dark:text-lightpurple dark:hover:text-teagreen">
-                    {" "}
-                    Ecoliday{" "}
-                  </h3>
-                </a>
-                <div className="flex gap-2">
-                  <SiJavascript />
-                  <SiMongodb />
-                  <SiExpress />
-                  <SiReact />
-                  <SiNodedotjs />
-                  <SiTailwindcss />
+          <section className="bg-darkpurple py-6">
+            <div className="bg-transparent flex justify-center mx-5 lg:mx-32">
+              <div>
+                <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start text-3xl text-bone  ">
+                  <a href={ecolidayUrl} target="_blank" rel="noreferrer">
+                    <h3 className=" font-inconstant font-extrabold text-3xl pb-2 mr-4 text-bone dark:text-lightpurple dark:hover:text-teagreen">
+                      {" "}
+                      Ecoliday{" "}
+                    </h3>
+                  </a>
+                  <div className="flex gap-2">
+                    <SiJavascript />
+                    <SiMongodb />
+                    <SiExpress />
+                    <SiReact />
+                    <SiNodedotjs />
+                    <SiTailwindcss />
+                  </div>
+                </div>
+                <div className="flex justify-center mx-4 text-justify md:justify-start md:mx-0">
+                  <p className="font-inconstant text-sm pb-6 max-w-3xl text-bone dark:text-gray-100 md:text-base">
+                    Ecoliday has been developed to enable people to make a more
+                    environmentally informed decision when planning a holiday.
+                    It provides users with estimated CO2e emissions for
+                    different destinations and vehicle types as well as
+                    suggesting local alternatives
+                  </p>
+                </div>
+                <div className="mx-4 md:mx-0">
+                  <Image
+                    src={Ecoliday}
+                    width={800}
+                    className="rounded-lg shadow-2xl mb-10"
+                  />
                 </div>
               </div>
-              <div className="flex justify-center mx-4 text-justify md:justify-start md:mx-0">
-                <p className="font-inconstant text-sm pb-6 max-w-3xl text-darkpurple dark:text-gray-100 md:text-base">
-                  Ecoliday has been developed to enable people to make a more
-                  environmentally informed decision when planning a holiday. It
-                  provides users with estimated CO2e emissions for different
-                  destinations and vehicle types as well as suggesting local
-                  alternatives
-                </p>
-              </div>
-              <div className="mx-4 md:mx-0">
-                <Image
-                  src={Ecoliday}
-                  width={800}
-                  className="rounded-lg shadow-2xl mb-10"
-                />
-              </div>
             </div>
-          </div>
-          <div className="bg-gray-100 bg-opacity-10 dark:bg-opacity-20 rounded-2xl px-4 py-4 flex justify-center mx-5 my-10 lg:mx-32">
-            <div>
-              <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-darkpurple dark:text-gray-100 ">
-                <a href={bloggyUrl} target="_blank" rel="noreferrer">
-                  <h3 className=" font-inconstant font-extrabold text-3xl pb-2 mr-4  text-darkpurple dark:text-lightpurple dark:hover:text-teagreen">
-                    {" "}
-                    Mister Bloggy{" "}
-                  </h3>
-                </a>
-                <div className="flex gap-2">
-                  <SiJavascript />
-                  <SiNextdotjs />
-                  <SiReact />
-                  <SiFirebase />
-                  <SiTailwindcss />
-                  <SiFigma />
+          </section>
+          <section className="bg-bone py-6">
+            <div className="bg-transparent flex justify-center mx-5 lg:mx-32">
+              <div>
+                <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-darkpurple dark:text-gray-100 ">
+                  <a href={bloggyUrl} target="_blank" rel="noreferrer">
+                    <h3 className=" font-inconstant font-extrabold text-3xl pb-2 mr-4  text-darkpurple dark:text-lightpurple dark:hover:text-teagreen">
+                      {" "}
+                      Mister Bloggy{" "}
+                    </h3>
+                  </a>
+                  <div className="flex gap-2">
+                    <SiJavascript />
+                    <SiNextdotjs />
+                    <SiReact />
+                    <SiFirebase />
+                    <SiTailwindcss />
+                    <SiFigma />
+                  </div>
+                </div>
+                <div className="flex justify-center mx-4 text-justify md:justify-start md:mx-0">
+                  <p className="font-inconstant text-sm md:text-base pb-6 max-w-3xl text-darkpurple dark:text-gray-100">
+                    This project is a blog web app designed for music, food, and
+                    design enthusiasts to share their latest findings with
+                    friends. The app uses Google authentication for user login
+                    and allows users to share posts, comment on posts, delete
+                    and edit their own posts. Built with the Next 13 framework
+                    and Firebase database.
+                  </p>
+                </div>
+                <div className="mx-4 md:mx-0">
+                  <Image
+                    src={mrbloggyscreen}
+                    width={800}
+                    className="rounded-lg shadow-2xl mb-10"
+                  />
                 </div>
               </div>
-              <div className="flex justify-center mx-4 text-justify md:justify-start md:mx-0">
-                <p className="font-inconstant text-sm md:text-base pb-6 max-w-3xl text-darkpurple dark:text-gray-100">
-                  This project is a blog web app designed for music, food, and
-                  design enthusiasts to share their latest findings with
-                  friends. The app uses Google authentication for user login and
-                  allows users to share posts, comment on posts, delete and edit
-                  their own posts. Built with the Next 13 framework and Firebase
-                  database.
-                </p>
-              </div>
-              <div className="mx-4 md:mx-0">
-                <Image
-                  src={mrbloggyscreen}
-                  width={800}
-                  className="rounded-lg shadow-2xl mb-10"
-                />
-              </div>
             </div>
-          </div>
-          <div className="bg-gray-100 bg-opacity-10 dark:bg-opacity-20 rounded-2xl px-4 py-4 flex justify-center mx-5 my-10 lg:mx-32">
-            <div>
-              <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-darkpurple dark:text-gray-100 ">
-                <a href={recipeaseURL} target="_blank" rel="noreferrer">
-                  <h3 className=" font-inconstant font-extrabold text-3xl pb-2 mr-4 text-darkpurple dark:text-lightpurple dark:hover:text-teagreen">
-                    {" "}
-                    Recipease{" "}
-                  </h3>
-                </a>
-                <div className="flex gap-2">
-                  <SiJavascript />
-                  <SiReact />
-                  <SiTailwindcss />
+          </section>
+          <section className="bg-darkpurple py-6">
+            <div className="bg-transparent  flex justify-center mx-5 lg:mx-32">
+              <div>
+                <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-bone dark:text-gray-100 ">
+                  <a href={recipeaseURL} target="_blank" rel="noreferrer">
+                    <h3 className=" font-inconstant font-extrabold text-3xl pb-2 mr-4 text-bone dark:text-lightpurple dark:hover:text-teagreen">
+                      {" "}
+                      Recipease{" "}
+                    </h3>
+                  </a>
+                  <div className="flex gap-2">
+                    <SiJavascript />
+                    <SiReact />
+                    <SiTailwindcss />
+                  </div>
+                </div>
+                <div className="flex justify-center mx-4 text-justify md:justify-start md:mx-0">
+                  <p className="font-inconstant text-sm md:text-base pb-6 max-w-3xl text-bone dark:text-gray-100">
+                    Explore a vast collection of delicious recipes with this
+                    food recipe library! The web-app allows users to browse
+                    recipes by category or search for specific ingredients,
+                    thanks to the Spoonacular API integration. Whether you're
+                    looking for healthy meals, vegetarian options, or indulgent
+                    desserts, the library has something for everyone. Start
+                    cooking up a storm today and discover your new favorite dish
+                    with this easy-to-use recipe library.
+                  </p>
+                </div>
+                <div className="mx-4 md:mx-0">
+                  <Image
+                    src={homepage}
+                    width={800}
+                    className="rounded-lg shadow-2xl mb-10"
+                  />
                 </div>
               </div>
-              <div className="flex justify-center mx-4 text-justify md:justify-start md:mx-0">
-                <p className="font-inconstant text-sm md:text-base pb-6 max-w-3xl text-darkpurple dark:text-gray-100">
-                  Explore a vast collection of delicious recipes with this food
-                  recipe library! The web-app allows users to browse recipes by
-                  category or search for specific ingredients, thanks to the
-                  Spoonacular API integration. Whether you're looking for
-                  healthy meals, vegetarian options, or indulgent desserts, the
-                  library has something for everyone. Start cooking up a storm
-                  today and discover your new favorite dish with this
-                  easy-to-use recipe library.
-                </p>
-              </div>
-              <div className="mx-4 md:mx-0">
-                <Image
-                  src={homepage}
-                  width={800}
-                  className="rounded-lg shadow-2xl mb-10"
-                />
-              </div>
             </div>
-          </div>
-
-          <div className=" bg-gray-100 bg-opacity-10 dark:bg-opacity-20 rounded-2xl px-4 py-4 flex justify-center mx-5 my-10 lg:mx-32">
-            <div className="">
-              <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-darkpurple dark:text-gray-100">
-                <a href={notflixUrl} target="_blank" rel="noreferrer">
-                  <h3 className=" font-inconstant font-extrabold text-3xl pb-2 text-darkpurple dark:text-lightpurple dark:hover:text-teagreen">
-                    {" "}
-                    Notflix{" "}
-                  </h3>
-                </a>
-                <div className="flex gap-2">
-                  <SiJavascript />
-                  <SiNextdotjs />
-                  <SiTailwindcss />
-                  <SiHtml5 />
+          </section>
+          <section className="bg-bone">
+            <div className=" bg-transparent px-4 py-6 flex justify-center mx-5 lg:mx-32">
+              <div className="">
+                <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-darkpurple dark:text-gray-100">
+                  <a href={notflixUrl} target="_blank" rel="noreferrer">
+                    <h3 className=" font-inconstant font-extrabold text-3xl pb-2 text-darkpurple dark:text-lightpurple dark:hover:text-teagreen">
+                      {" "}
+                      Notflix{" "}
+                    </h3>
+                  </a>
+                  <div className="flex gap-2">
+                    <SiJavascript />
+                    <SiNextdotjs />
+                    <SiTailwindcss />
+                    <SiHtml5 />
+                  </div>
+                </div>
+                <div className="flex justify-center mx-4 text-justify md:justify-start md:mx-0">
+                  <p className="font-inconstant text-sm md:text-base pb-6 max-w-3xl text-darkpurple dark:text-gray-100">
+                    This film database was built to familiarise myself with the
+                    latest version of Next.js. See information about the latest
+                    films with courtesy of The Movie DataBase API.
+                  </p>
+                </div>
+                <div className="mx-4 md:mx-0">
+                  <Image
+                    src={notflix}
+                    width={800}
+                    className="rounded-lg shadow-2xl mb-10"
+                  />
                 </div>
               </div>
-              <div className="flex justify-center mx-4 text-justify md:justify-start md:mx-0">
-                <p className="font-inconstant text-sm md:text-base pb-6 max-w-3xl text-darkpurple dark:text-gray-100">
-                  This film database was built to familiarise myself with the
-                  latest version of Next.js. See information about the latest
-                  films with courtesy of The Movie DataBase API.
-                </p>
-              </div>
-              <div className="mx-4 md:mx-0">
-                <Image
-                  src={notflix}
-                  width={800}
-                  className="rounded-lg shadow-2xl mb-10"
-                />
-              </div>
             </div>
-          </div>
+          </section>
           <Footer />
         </main>
       </div>

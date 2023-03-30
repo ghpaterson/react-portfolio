@@ -1,22 +1,30 @@
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Image from "next/image";
-import titledark from "../public/dark/titledark.png";
-import darkhero from "../public/dark/darkhero.png";
-import titlelight from "../public/light/titlelight.png";
+import titlelight2 from "../public/light/titlelight2.png";
 import lighthero from "../public/light/lighthero.png";
 
 export default function Body({ darkMode }) {
-  const gitHubUrl = "https://github.com/ghpaterson";
-  const linkedInUrl = "https://www.linkedin.com/in/graeme-paterson-25b096268/";
   return (
     <>
       <div className={darkMode ? "dark" : ""}>
         <div className="flex flex-col justify-center items-center my-20 lg:flex-row">
           <div>
-            <Image src={darkMode ? titledark : titlelight} width={400} />
+            <Image
+              id="title-image"
+              src={titlelight2}
+              width={400}
+              alt="title"
+              priority
+            />
           </div>
+
           <div>
-            <Image src={darkMode ? darkhero : lighthero} width={500} />
+            <Image
+              id="hero-image"
+              src={lighthero}
+              width={500}
+              alt="hero"
+              priority
+            />
           </div>
         </div>
       </div>
