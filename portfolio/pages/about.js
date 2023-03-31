@@ -43,66 +43,79 @@ export default function About({ darkMode, setDarkMode }) {
               </div>
             </div>
           </section>
-          <section className="">
-            <div className=" bg-darkpurple pb-12 flex justify-center lg:flex lg:justify-start">
-              <div className="md:ml-60">
-                <div className="h-72 w-96">
-                  <p1 className="font-inconstant text-xl text-bone ">
-                    <MdComputer className="text-5xl  my-5" />
-                    I’m motivated to work in tech for its potential power to
-                    drive positive change in our world. I love how it is
-                    constantly evolving and offering endless opportunities for
-                    learning and growth. In today's world technology plays a
-                    crucial role in shaping the future, and I'm excited to be a
-                    part of it.
-                  </p1>
-                </div>
+          <section className="bg-bone py-6 h-screen">
+            <div className="bg-transparent">
+              <div className="flex justify-center">
+                <h3 className=" font-inconstant font-extrabold text-xl md:text-3xl pb-4 mr-4 text-darkpurple ">
+                  Journey as a Software Developer
+                </h3>
               </div>
-            </div>
-            <div className="bg-bone pb-10 flex justify-center lg:flex lg:justify-end lg:pb-20 ">
-              <div className="md:mr-60">
-                <div className="h-80 w-96 my-8 md:my-0">
-                  <p2 className="font-inconstant text-xl text-darkpurple ">
-                    <GoPaintcan className="text-5xl my-5" />
-                    I'm always striving to level up my design game, especially
-                    when it comes to UI/UX. My goal is to create designs that
-                    not only look great but are also super user-friendly. To
-                    achieve this, I'm committed to constatly learning and
-                    experimenting with design techniques. I'm also excited to
-                    collaborate with designers to bring out-of-the-box ideas to
-                    life.
-                  </p2>
-                </div>
-              </div>
-            </div>
-            <div className="bg-darkpurple pb-10 flex justify-center lg:flex lg:justify-start lg:py-10 ">
-              <div className="md:ml-60">
-                <div className="h-72 w-96 my-2 md:my-0">
-                  <p3 className="font-inconstant text-xl text-bone ">
-                    <FaAmbulance className="text-5xl my-5" />I have ten years
-                    experience working with patients in public healthcare
-                    systems I have a passion for providing better services to
-                    society and ensuring that everyone from our communities have
-                    equal access to things that make their lives healthier and
-                    more fulfilling.
-                  </p3>
-                </div>
-              </div>
-            </div>
-            <div className=" bg-bone flex justify-center lg:flex lg:justify-end ">
-              <div className="md:mr-60">
-                <div className="h-72 w-96 md:my-0">
-                  <p4 className="font-inconstant text-xl text-darkpurple ">
-                    <BiFontFamily className="text-5xl my-5" />
-                    The typeface used on this website is called "Inconstant
-                    Regular" It was created by Dyslexia Scotland in
-                    collaboration with designer Daniel Brokstad to be friendly
-                    to both dyslexia and designers alike.
-                  </p4>
-                </div>
+              <div className="flex justify-center">
+                <p className="font-inconstant text-md md:text-lg pb-6 max-w-3xl text-darkpurple">
+                  I’m motivated to work in tech for its potential power to drive
+                  positive change in our world. I love how it is constantly
+                  evolving and offering endless opportunities for learning and
+                  growth. In today's world technology plays a crucial role in
+                  shaping the future, and I'm excited to be a part of it.
+                </p>
               </div>
             </div>
           </section>
+          <section className="bg-teagreen py-6 h-screen">
+            <div className="bg-transparent">
+              <div className="flex justify-center">
+                <h3 className=" font-inconstant font-extrabold text-xl md:text-3xl pb-4 mr-4 text-darkpurple ">
+                  Passion for UI/UX Design
+                </h3>
+              </div>
+              <div className="flex justify-center">
+                <p className="font-inconstant text-md md:text-lg pb-6 max-w-3xl text-darkpurple">
+                  I'm always striving to level up my design game, especially
+                  when it comes to UI/UX. My goal is to create designs that not
+                  only look great but are also super user-friendly. To achieve
+                  this, I'm committed to constatly learning and experimenting
+                  with design techniques. I'm also excited to collaborate with
+                  designers to bring out-of-the-box ideas to life.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section className="bg-lightpurple py-6 h-screen">
+            <div className="bg-transparent">
+              <div className="flex justify-center">
+                <h3 className=" font-inconstant font-extrabold text-xl md:text-3xl pb-4 mr-4 text-darkpurple ">
+                  Life as a Heathcare Professional
+                </h3>
+              </div>
+              <div className="flex justify-center">
+                <p className="font-inconstant text-md md:text-lg pb-6 max-w-3xl text-darkpurple">
+                  I have ten years experience working with patients in public
+                  healthcare systems I have a passion for providing better
+                  services to society and ensuring that everyone from our
+                  communities have equal access to things that make their lives
+                  healthier and more fulfilling.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section className="bg-bone py-6 h-screen">
+            <div className="bg-transparent">
+              <div className="flex justify-center">
+                <h3 className=" font-inconstant font-extrabold text-xl md:text-3xl pb-4 mr-4 text-darkpurple ">
+                  Typeface design for this website
+                </h3>
+              </div>
+              <div className="flex justify-center">
+                <p className="font-inconstant text-md md:text-lg pb-6 max-w-3xl text-darkpurple">
+                  The typeface used on this website is called "Inconstant
+                  Regular" It was created by Dyslexia Scotland in collaboration
+                  with designer Daniel Brokstad to be friendly to both dyslexia
+                  and designers alike.
+                </p>
+              </div>
+            </div>
+          </section>
+
           <Footer />
         </main>
       </div>
