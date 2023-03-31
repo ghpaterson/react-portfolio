@@ -6,7 +6,7 @@ import about from "../public/light/About.png";
 import sayhello from "../public/sayhello.png";
 import healthcare from "../public/light/healthcare.png";
 import selfie from "../public/light/selfie.png";
-
+import dev from "../public/light/dev.png";
 export default function About({ darkMode, setDarkMode }) {
   return (
     <>
@@ -29,8 +29,7 @@ export default function About({ darkMode, setDarkMode }) {
                   <div className="flex justify-center">
                     <Image src={about} width={200} />
                   </div>
-                  <h3 className="text-2xl py-2 text-darkpurple md:text-3xl "></h3>
-                  <p className=" font-inconstant text-md py-5 leading-8 text-darkpurple md:text-xl max-w-md mx-auto ">
+                  <p className=" font-inconstant text-md py-5 leading-8 text-darkpurple md:text-xl md:mx-0 max-w-md mx-auto ">
                     I'm a Junior FullStack Software Developer and Makers Academy
                     Graduate. Scroll down to find out a bit more about me.
                   </p>
@@ -48,7 +47,7 @@ export default function About({ darkMode, setDarkMode }) {
                   Journey as a Software Developer
                 </h3>
               </div>
-              <div className="flex flex-col justify-center items-center md:flex-row md:items-center md:py-32 gap-10 py-16">
+              <div className="flex flex-col justify-center items-center md:flex-row md:items-center md:py-32 md:gap-0 gap-10 py-16">
                 <p className="font-inconstant text-md md:text-lg max-w-lg px-10  text-darkpurple">
                   I’m motivated to work in tech for its potential power to drive
                   positive change in our world. I love how it is constantly
@@ -56,7 +55,7 @@ export default function About({ darkMode, setDarkMode }) {
                   growth. In today's world technology plays a crucial role in
                   shaping the future, and I'm excited to be a part of it.
                 </p>
-                <Image src={healthcare} width={400} key="healthcare" />
+                <Image src={dev} width={400} key="healthcare" />
               </div>
             </div>
           </section>
