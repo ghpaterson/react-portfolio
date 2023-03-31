@@ -2,12 +2,10 @@ import Head from "next/head";
 import NavBar from "./navBar";
 import Footer from "./footer";
 import Image from "next/image";
-import { FaAmbulance } from "react-icons/fa";
-import { MdComputer } from "react-icons/md";
-import { BiFontFamily } from "react-icons/bi";
-import { GoPaintcan } from "react-icons/go";
 import coffeelight from "../public/light/Coffeelight.png";
 import about from "../public/light/About.png";
+import sayhello from "../public/sayhello.png";
+import healthcare from "../public/light/healthcare.png";
 
 export default function About({ darkMode, setDarkMode }) {
   return (
@@ -83,30 +81,32 @@ export default function About({ darkMode, setDarkMode }) {
           <section className="bg-lightpurple py-6 h-screen">
             <div className="bg-transparent">
               <div className="flex justify-center">
-                <h3 className=" font-inconstant font-extrabold text-xl md:text-3xl pb-4 mr-4 text-darkpurple ">
+                <h3 className=" font-inconstant font-extrabold text-xl md:text-3xl py-6 mr-4 text-darkpurple ">
                   Life as a Heathcare Professional
                 </h3>
               </div>
-              <div className="flex justify-center">
-                <p className="font-inconstant text-md md:text-lg pb-6 max-w-3xl text-darkpurple">
+              <div className="flex flex-col justify-center items-center md:flex-row md:items-center md:py-32 gap-10 py-16">
+                <p className="font-inconstant text-md md:text-lg max-w-lg px-10 py--6 text-darkpurple">
                   I have ten years experience working with patients in public
                   healthcare systems I have a passion for providing better
                   services to society and ensuring that everyone from our
                   communities have equal access to things that make their lives
                   healthier and more fulfilling.
                 </p>
+                <Image src={healthcare} width={400} key="healthcare" />
               </div>
             </div>
           </section>
           <section className="bg-bone py-6 h-screen">
             <div className="bg-transparent">
               <div className="flex justify-center">
-                <h3 className=" font-inconstant font-extrabold text-xl md:text-3xl pb-4 mr-4 text-darkpurple ">
+                <h3 className=" font-inconstant font-extrabold text-xl md:text-3xl py-6 mr-4 text-darkpurple ">
                   Typeface design for this website
                 </h3>
               </div>
-              <div className="flex justify-center">
-                <p className="font-inconstant text-md md:text-lg pb-6 max-w-3xl text-darkpurple">
+              <div className="flex flex-col justify-center items-center md:flex-row md:items-center md:py-32 gap-10 py-16">
+                <Image src={sayhello} width={400} key="sayhello" />
+                <p className="font-inconstant text-md md:text-lg max-w-lg px-10 py--6 text-darkpurple">
                   The typeface used on this website is called "Inconstant
                   Regular" It was created by Dyslexia Scotland in collaboration
                   with designer Daniel Brokstad to be friendly to both dyslexia
