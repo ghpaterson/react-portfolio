@@ -44,30 +44,32 @@ export default function About({ darkMode, setDarkMode }) {
           <section className="bg-bone py-6 h-screen">
             <div className="bg-transparent">
               <div className="flex justify-center">
-                <h3 className=" font-inconstant font-extrabold text-xl md:text-3xl pb-4 mr-4 text-darkpurple ">
+                <h3 className=" font-inconstant font-extrabold text-xl md:text-3xl py-6 mr-4 text-darkpurple ">
                   Journey as a Software Developer
                 </h3>
               </div>
-              <div className="flex justify-center">
-                <p className="font-inconstant text-md md:text-lg pb-6 max-w-3xl text-darkpurple">
+              <div className="flex flex-col justify-center items-center md:flex-row md:items-center md:py-32 gap-10 py-16">
+                <p className="font-inconstant text-md md:text-lg max-w-lg px-10  text-darkpurple">
                   I’m motivated to work in tech for its potential power to drive
                   positive change in our world. I love how it is constantly
                   evolving and offering endless opportunities for learning and
                   growth. In today's world technology plays a crucial role in
                   shaping the future, and I'm excited to be a part of it.
                 </p>
+                <Image src={healthcare} width={400} key="healthcare" />
               </div>
             </div>
           </section>
           <section className="bg-teagreen py-6 h-screen">
             <div className="bg-transparent">
               <div className="flex justify-center">
-                <h3 className=" font-inconstant font-extrabold text-xl md:text-3xl pb-4 mr-4 text-darkpurple ">
-                  Passion for UI/UX Design
+                <h3 className=" font-inconstant font-extrabold text-xl md:text-3xl py-6 mr-4 text-darkpurple ">
+                  Passion for UI/UX and design
                 </h3>
               </div>
-              <div className="flex justify-center">
-                <p className="font-inconstant text-md md:text-lg pb-6 max-w-3xl text-darkpurple">
+              <div className="flex flex-col justify-center items-center md:flex-row md:items-center md:py-32 gap-10 py-6">
+                <Image src={healthcare} width={400} key="healthcare" />
+                <p className="font-inconstant text-md md:text-lg max-w-lg px-10  text-darkpurple">
                   I'm always striving to level up my design game, especially
                   when it comes to UI/UX. My goal is to create designs that not
                   only look great but are also super user-friendly. To achieve
@@ -86,7 +88,7 @@ export default function About({ darkMode, setDarkMode }) {
                 </h3>
               </div>
               <div className="flex flex-col justify-center items-center md:flex-row md:items-center md:py-32 gap-10 py-16">
-                <p className="font-inconstant text-md md:text-lg max-w-lg px-10 py--6 text-darkpurple">
+                <p className="font-inconstant text-md md:text-lg max-w-lg px-10  text-darkpurple">
                   I have ten years experience working with patients in public
                   healthcare systems I have a passion for providing better
                   services to society and ensuring that everyone from our
