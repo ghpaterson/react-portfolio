@@ -2,10 +2,10 @@ import Head from "next/head";
 import NavBar from "./navBar";
 import Footer from "./footer";
 import Image from "next/image";
-import coffeelight from "../public/light/Coffeelight.png";
 import about from "../public/light/About.png";
 import sayhello from "../public/sayhello.png";
 import healthcare from "../public/light/healthcare.png";
+import selfie from "../public/light/selfie.png";
 
 export default function About({ darkMode, setDarkMode }) {
   return (
@@ -21,7 +21,7 @@ export default function About({ darkMode, setDarkMode }) {
           <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
           <section className="h-96 mb-32 md:mb-24 lg:mb-60">
             <div className="mx-24">
-              <div className="min-w-screen h-96 flex flex-col items-center mt-20 rounded-xl  md:flex-row md:gap-4 md:ml-32 md:mt-24">
+              <div className="min-w-screen h-96 flex flex-col items-center mt-20 rounded-xl  md:flex-row  md:ml-32 md:mt-24">
                 <div className="text-center p-1">
                   {/* <h2 className="font-moonie text-4xl py-2 text-darkpurple font-extrabold md:text-7xl  dark:text-lightpurple">
                     About
@@ -35,8 +35,8 @@ export default function About({ darkMode, setDarkMode }) {
                     Graduate. Scroll down to find out a bit more about me.
                   </p>
                 </div>
-                <div className="ml-6 md:mt-12">
-                  <Image src={coffeelight} width={500} />
+                <div className="">
+                  <Image src={selfie} width={600} />
                 </div>
               </div>
             </div>
@@ -89,9 +89,9 @@ export default function About({ darkMode, setDarkMode }) {
               </div>
               <div className="flex flex-col justify-center items-center md:flex-row md:items-center md:py-32 gap-10 py-16">
                 <p className="font-inconstant text-md md:text-lg max-w-lg px-10  text-darkpurple">
-                  I have ten years experience working with patients in public
-                  healthcare systems I have a passion for providing better
-                  services to society and ensuring that everyone from our
+                  I have over ten years of experience working with patients in
+                  public healthcare systems. I have a passion for providing
+                  better services to society and ensuring that everyone from our
                   communities have equal access to things that make their lives
                   healthier and more fulfilling.
                 </p>

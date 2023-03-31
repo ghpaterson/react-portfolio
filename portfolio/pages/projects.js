@@ -106,7 +106,7 @@ export default function Projects({ darkMode, setDarkMode }) {
                       Mister Bloggy{" "}
                     </h3>
                   </a>
-                  <div className="flex gap-2">
+                  <div className="flex gap-2 text-darkpurple">
                     <SiJavascript />
                     <SiNextdotjs />
                     <SiReact />
