@@ -5,7 +5,7 @@ import Image from "next/image";
 import about from "../public/light/About.png";
 import sayhello from "../public/sayhello.png";
 import healthcare from "../public/light/healthcare.png";
-import selfie from "../public/light/selfie.png";
+import selfie from "../public/light/Selfie.png";
 import dev from "../public/light/dev.png";
 import dancing from "../public/light/dancing.png";
 export default function About({ darkMode, setDarkMode }) {
