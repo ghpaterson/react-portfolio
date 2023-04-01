@@ -7,7 +7,7 @@ import sayhello from "../public/sayhello.png";
 import healthcare from "../public/light/healthcare.png";
 import selfie from "../public/light/Selfie.png";
 import dev from "../public/light/dev.png";
-import dancing from "../public/light/dancing.png";
+import uiux from "../public/light/uiux.png";
 export default function About({ darkMode, setDarkMode }) {
   return (
     <>
@@ -68,7 +68,7 @@ export default function About({ darkMode, setDarkMode }) {
                 </h3>
               </div>
               <div className="flex flex-col justify-center items-center md:flex-row md:items-center md:py-32 gap-10 py-6">
-                <Image src={dancing} width={400} key="healthcare" />
+                <Image src={uiux} width={400} key="healthcare" />
                 <p className="font-inconstant text-md md:text-lg max-w-lg px-10  text-darkpurple">
                   I'm always striving to level up my design game, especially
                   when it comes to UI/UX. My goal is to create designs that not
