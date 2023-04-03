@@ -2,6 +2,12 @@
 
 This is my personal porfolio, it is designed to highlight some of the projects that I am proud of. It has links to my Github Cv, personal Github and my Linkedin. The projects highlighted have links to their Github repositories.
 
+## Frameworks
+
+- Next.js
+- Tailwindcss
+- Figma
+
 ## Installation
 
 ```js
@@ -21,15 +27,21 @@ $ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) to see my portfolio in your browser.
 
+visit www.graemepaterson.co.uk
+
 ## Screen
 
-Light Mode
+Home
 
-![Light](./public/portfolio-screen2.png)
+![Home](./public/portfolioscreen1.png)
 
-Dark Mode
+About
 
-![Dark](./public/portfolio-screen.png)
+![About](./public/portfolioscreen2.png)
+
+Projects
+
+![Projects](./public/portfolioscreen3.png)
 
 ## Deploy on Vercel
 
