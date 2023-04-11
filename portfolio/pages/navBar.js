@@ -72,7 +72,7 @@ export default function NavBar() {
             className={`font-inconstant font-bold text-darkpurple  ${
               darkMode ? "dark:text-darkpurple" : ""
             } px-4 py-2 border-none rounded-md ml-1 mr-1`}
-            href="/graeme-cv.pdf"
+            href="/CV.pdf"
             target="_blank"
           >
             CV
