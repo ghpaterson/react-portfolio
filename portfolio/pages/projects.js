@@ -3,8 +3,8 @@ import NavBar from "./navBar";
 import Image from "next/image";
 import Head from "next/head";
 import Ecoliday from "../public/Ecoliday.png";
-import homepage from "../public/homepage.png";
-import notflix from "../public/notflix.png";
+import decode from "../public/decode-screen.png";
+import headless from "../public/headless-screen.png";
 import bloggyscreen from "../public/bloggyscreen.png";
 import messylavender from "../public/light/Messylavender.png";
 import projects from "../public/light/Projects.png";
@@ -16,17 +16,17 @@ import {
   SiNodedotjs,
   SiTailwindcss,
   SiJavascript,
-  SiHtml5,
   SiNextdotjs,
   SiFirebase,
   SiFigma,
+  SiGraphql,
 } from "react-icons/si";
 
 export default function Projects({ darkMode, setDarkMode }) {
   const ecolidayUrl = "https://ecoliday-cxyz.onrender.com/";
   const bloggyUrl = "https://github.com/ghpaterson/bloggy";
-  const notflixUrl = "https://github.com/ghpaterson/notflix";
-  const recipeaseURL = "https://github.com/ghpaterson/recipease";
+  const decodeURL = "https://decode-care.vercel.app/";
+  const headlessURL = "https://github.com/ghpaterson/headlessblog";
   return (
     <>
       <div className={darkMode ? "dark" : ""}>
@@ -139,33 +139,35 @@ export default function Projects({ darkMode, setDarkMode }) {
             <div className="bg-transparent  flex justify-center mx-5 lg:mx-32">
               <div>
                 <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-bone  ">
-                  <a href={recipeaseURL} target="_blank" rel="noreferrer">
+                  <a href={decodeURL} target="_blank" rel="noreferrer">
                     <h3 className=" font-inconstant font-extrabold text-3xl pb-2 mr-4 text-bone ">
                       {" "}
-                      Recipease{" "}
+                      Decode Care{" "}
                     </h3>
                   </a>
                   <div className="flex gap-2">
                     <SiJavascript />
                     <SiReact />
                     <SiTailwindcss />
+                    <SiNextdotjs />
                   </div>
                 </div>
                 <div className="flex justify-center mx-4 text-justify md:justify-start md:mx-0">
                   <p className="font-inconstant text-sm md:text-base pb-6 max-w-3xl text-bone ">
-                    Explore a vast collection of delicious recipes with this
-                    food recipe library! The web-app allows users to browse
-                    recipes by category or search for specific ingredients,
-                    thanks to the Spoonacular API integration. Whether you're
-                    looking for healthy meals, vegetarian options, or indulgent
-                    desserts, the library has something for everyone. Start
-                    cooking up a storm today and discover your new favorite dish
-                    with this easy-to-use recipe library.
+                    Introducing a new web app that can help young children and
+                    people with reading difficulties to improve their reading
+                    skills. This app is designed to offer an ever-growing
+                    collection of reading exercises that utilize engaging and
+                    research-backed techniques to aid in improving reading
+                    abilities. Built with next.js and deployed on vercel, the
+                    app boasts reliability, speed, and user-friendliness. As it
+                    is continuously updated with new exercises, the app
+                    guarantees an exciting and engaging experience for its users
                   </p>
                 </div>
                 <div className="mx-4 md:mx-0">
                   <Image
-                    src={homepage}
+                    src={decode}
                     width={800}
                     className="rounded-lg shadow-2xl mb-10"
                   />
@@ -177,29 +179,36 @@ export default function Projects({ darkMode, setDarkMode }) {
             <div className=" bg-transparent px-4 py-6 flex justify-center mx-5 lg:mx-32">
               <div className="">
                 <div className="flex flex-col justify-center items-center md:flex md:items-center md:justify-start gap-4 mb-6 text-2xl text-darkpurple ">
-                  <a href={notflixUrl} target="_blank" rel="noreferrer">
+                  <a href={headlessURL} target="_blank" rel="noreferrer">
                     <h3 className=" font-inconstant font-extrabold text-3xl pb-2 text-darkpurple ">
                       {" "}
-                      Notflix{" "}
+                      Headless{" "}
                     </h3>
                   </a>
                   <div className="flex gap-2">
                     <SiJavascript />
                     <SiNextdotjs />
                     <SiTailwindcss />
-                    <SiHtml5 />
+                    <SiReact />
+                    <SiGraphql />
                   </div>
                 </div>
                 <div className="flex justify-center mx-4 text-justify md:justify-start md:mx-0">
                   <p className="font-inconstant text-sm md:text-base pb-6 max-w-3xl text-darkpurple ">
-                    This film database was built to familiarise myself with the
-                    latest version of Next.js. See information about the latest
-                    films with courtesy of The Movie DataBase API.
+                    I am passionate about web design, software development, and
+                    technology so I created a personal blog called Headless. The
+                    name took inspiration from my discovery and implementation
+                    of Headless CMS. Headless, a new web blog is designed to
+                    keep you up-to-date with my latest learning and insights in
+                    these fields.As a blog that's built using Next 13, Hygraph
+                    and GraphQl, Headless is the perfect platform for me to
+                    share my knowledge and insights with others who share my
+                    interests.
                   </p>
                 </div>
                 <div className="mx-4 md:mx-0">
                   <Image
-                    src={notflix}
+                    src={headless}
                     width={800}
                     className="rounded-lg shadow-2xl mb-10"
                   />
